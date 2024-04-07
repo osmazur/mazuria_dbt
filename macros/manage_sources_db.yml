@@ -1,0 +1,11 @@
+version: 2
+ 
+sources:
+  - name: source_name 
+    database: |
+      {%- if  target.name == "dev" -%} raw_dev
+      {%- elif target.name == "qa"  -%} raw_qa
+      {%- elif target.name == "prod"  -%} raw_prod
+      {%- else -%} invalid_database
+      {%- endif -%}
+    schema: source_schema
