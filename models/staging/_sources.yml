@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: raw
+    database: mazuria
+    schema: mazuria_raw
+
+    tables:
+      - name: mazuria_gs_raw_transactions
+      - name: mazuria_gs_raw__customers_history
+      - name: mazuria_gs_raw_groups
+      - name: mazuria_gs_raw_courses
+      - name: mazuria_gs_raw__google_calendar
+      - name: mazuria_gs_raw_teachers

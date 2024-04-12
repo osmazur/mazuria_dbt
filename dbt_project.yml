@@ -37,8 +37,10 @@ models:
       +materialized: table
     intermediate:
       +materialized: table
+      enabled: false
     marts:
       +materialized: table
+      enabled: false
     test_n:
       +materialized: table
       enabled: false
