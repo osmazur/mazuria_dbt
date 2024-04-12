@@ -6,8 +6,8 @@
         mazuria_dbt_prod
     {%- elif target.name == 'uat' -%}
         mazuria_dbt_uat
-    {%- elif target.user == 'admin' -%} prod_ci_job
-        mazuria_dbt_dev
+    {%- elif target.user == 'oleksandrmazur' -%} prod_ci_job
+        mazuria_dbt_{{target.user}}
     {%- elif target.name == 'prod_ci_job' -%} prod_ci_job
         mazuria_dbt_prod_ci
     {%- elif target.name == 'uat_ci_job' -%} prod_ci_job
