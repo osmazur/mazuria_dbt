@@ -1,1 +1,0 @@
-select * from {{ source('raw', 'people_mazuria_raw') }}
