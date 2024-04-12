@@ -11,7 +11,7 @@ final as (
 
 	select 
 		first_name as teacher_first_name,
-        second_name as teacher_second_name,
+        last_name as teacher_last_name,
         full_name as teacher_full_name,
         phone as teacher_phone,
         start_date as teacher_start_date,
