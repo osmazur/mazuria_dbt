@@ -1,1 +1,0 @@
-select tests from {{ source('raw', 'money_mazuria_raw') }}

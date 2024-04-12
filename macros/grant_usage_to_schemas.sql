@@ -3,7 +3,7 @@
     {%- set users_uat = 'user_a, user_b' -%}
     {%- set users_prod = 'user_c, user_d' -%}
 
-     {%- if  target.name == "dbt_prod" or target.name == 'ci_job_one_schema_prod' -%}
+     {%- if  target.name == "dbt_prod" or target.name == 'ci_job_prod' -%}
         {% for schema in schemas%} grant usage on schema {{ schema }} to {{ users_prod }}; {% endfor%}
         {% for schema in schemas %}grant select on all tables in schema {{ schema }} to {{ users_prod }};{% endfor%}
         {% for schema in schemas %}alter default privileges in schema {{ schema }}  grant select on tables to {{ users_prod }};{% endfor %}
