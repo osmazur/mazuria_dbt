@@ -41,8 +41,8 @@ models:
     marts:
       +materialized: table
       enabled: false
-    test_n:
-      +materialized: table
+    workspaces:
+      +materialized: view
       enabled: false
 
 seeds:
