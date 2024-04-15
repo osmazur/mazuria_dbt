@@ -5,21 +5,16 @@ Welcome to Mazuria dbt project!
 ### Data Platform to support the decision making 
 
 Mazuria Data Platform 1.0 The local one, MVP
-![alt text](images/mdp_local.jpg)
+![alt text](images/mdp_local.png)
 
 Mazuria Data Platform 2.0 The cloud one and this is current state
-![alt text](images/mdp_cloud.jpg)
+![alt text](images/mdp_cloud.png)
 
 Mazuria Data Platform 3.0 The cloud one and this is future state
-![alt text](images/mdp_cloud_future.jpg)
+![alt text](images/mdp_cloud_future.png)
 
-![alt text](images/image.png)
-
-Mazuria Data Platform 3.0 The cloud one and this is future state
-![alt text](images/mdp_test.jpg)
 
 ### Other:
 
 [Sources ERD](models/staging/README.md)
 
-![alt text](image.png)
