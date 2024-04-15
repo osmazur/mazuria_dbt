@@ -2,4 +2,4 @@ Welcome to the staging area
 
 Source data ERD
 
-<img src="images/sources_erd.png">
+![alt text](../../images/sources_erd.png)
