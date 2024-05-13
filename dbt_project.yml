@@ -35,6 +35,7 @@ models:
     # Config indicated by + and applies to all files under models/example/
     staging:
       +materialized: table
+      enabled: true
     intermediate:
       +materialized: table
       enabled: false
