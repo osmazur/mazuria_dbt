@@ -1,15 +1,20 @@
-Welcome to your new dbt project!
+Welcome to Mazuria dbt project!
 
-### Using the starter project
+[Mazuria.studio Instagram](https://www.instagram.com/mazuria.studio/)
 
-Try running the following commands:
-- dbt run
-- dbt test
+### Data Platform to support the decision making 
+
+Mazuria Data Platform 1.0 The local one, MVP
+![alt text](images/mdp_local.png)
+
+Mazuria Data Platform 2.0 The cloud one and this is current state
+![alt text](images/mdp_cloud.png)
+
+Mazuria Data Platform 3.0 The cloud one and this is future state
+![alt text](images/mdp_cloud_future.png)
 
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### Other:
+
+[Sources ERD](models/staging/README.md)
+
