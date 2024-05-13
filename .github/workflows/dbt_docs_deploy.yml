@@ -20,14 +20,14 @@ jobs:
         python-version: 3.8
 
     - name: Install dbt
-      run: pip install dbt-snowflake
+      run: pip install dbt-postgres
 
     - name: Set up dbt profile
       run: |
         mkdir -p ~/.dbt
         echo "
 
-        company-name:
+        mazuria_dbt:
           target: dev
           outputs:
             dev:
