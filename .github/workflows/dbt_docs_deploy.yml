@@ -1,0 +1,54 @@
+name: Deploy dbt docs to GitHub Pages
+
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+
+    - name: Install dbt
+      run: pip install dbt-snowflake
+
+    - name: Set up dbt profile
+      run: |
+        mkdir -p ~/.dbt
+        echo "
+
+        company-name:
+          target: dev
+          outputs:
+            dev:
+              type: postgres
+              host: ${{ secrets.PG_HOST }}
+              user: ${{ secrets.PG_USER }}
+              password: ${{ secrets.PG_PASSWORD }}
+              port: ${{ secrets.PG_PORT }}
+              dbname: ${{ secrets.PG_DATABASE }}
+              schema: public
+              threads: 1
+        " > ~/.dbt/profiles.yml      
+
+    - name: Install dependancies
+      run: dbt deps
+      
+    - name: Generate dbt docs
+      run: dbt docs generate
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GH_PAT }}
+        publish_dir: ./target
