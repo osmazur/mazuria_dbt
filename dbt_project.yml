@@ -49,7 +49,7 @@ models:
       +materialized: view
       enabled: false
 
-seeds:
-  mazuria_dbt:
-    +enabled: false
-    +schema: raw_data
+# seeds:
+#   mazuria_dbt:
+#     +enabled: false
+#     +schema: raw_data
