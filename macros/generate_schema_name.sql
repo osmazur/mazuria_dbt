@@ -6,11 +6,11 @@
         dbt_prod_{{ custom_schema_name | trim }}
     {%- elif target.name == 'uat' -%}
         dbt_uat_{{ custom_schema_name | trim }}
-    {%- elif target.user == 'oleksandrmazur' -%} prod_ci_job
+    {%- elif target.user == 'oleksandrmazur' -%}
         dbt_{{target.user}}
-    {%- elif target.name == 'prod_ci_job' -%} prod_ci_job
+    {%- elif target.name == 'prod_ci_job' -%}
         dbt_prod_ci
-    {%- elif target.name == 'uat_ci_job' -%} prod_ci_job
+    {%- elif target.name == 'uat_ci_job' -%}
         dbt_uat_ci
     {%- else -%}
         {{ default_schema }}
