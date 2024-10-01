@@ -3,9 +3,9 @@
     {%- set default_schema = target.schema -%}
 
     {%- if target.name == 'prod' -%}
-        mazuria_dbt_prod
+        mazuria_dbt_prod_{{ custom_schema_name | trim }}
     {%- elif target.name == 'uat' -%}
-        mazuria_dbt_uat
+        mazuria_dbt_uat_{{ custom_schema_name | trim }}
     {%- elif target.user == 'oleksandrmazur' -%} prod_ci_job
         mazuria_dbt_{{target.user}}
     {%- elif target.name == 'prod_ci_job' -%} prod_ci_job

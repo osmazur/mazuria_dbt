@@ -36,12 +36,15 @@ models:
     staging:
       +materialized: table
       enabled: true
+      +schema: stg
     intermediate:
       +materialized: table
       enabled: false
+      +schema: int
     marts:
       +materialized: table
       enabled: false
+      +schema: mrt
     workspaces:
       +materialized: view
       enabled: false
