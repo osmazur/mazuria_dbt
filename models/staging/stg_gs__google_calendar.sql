@@ -23,7 +23,7 @@ final as (
         color as event_color,
         description as event_description,
         loaded_at,
-        is_removed,
+        --is_removed,
         Null as course_email_id
 	from mazuria_gs_raw__google_calendar
 
