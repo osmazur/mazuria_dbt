@@ -39,11 +39,11 @@ models:
       +schema: stg
     intermediate:
       +materialized: table
-      enabled: false
+      enabled: true
       +schema: int
     marts:
       +materialized: table
-      enabled: false
+      enabled: true
       +schema: mrt
     workspaces:
       +materialized: view
