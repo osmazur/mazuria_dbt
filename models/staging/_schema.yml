@@ -1,2 +1,9 @@
-
 version: 2
+
+models:
+  - name: stg_pb_transactions
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null

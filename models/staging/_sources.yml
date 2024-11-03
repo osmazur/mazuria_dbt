@@ -12,3 +12,5 @@ sources:
       - name: mazuria_gs_raw_courses
       - name: mazuria_gs_raw__google_calendar
       - name: mazuria_gs_raw_teachers
+      - name: mazuria_pb_raw_transactions
+      - name: mazuria_gs_raw_transactions_kasa
