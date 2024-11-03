@@ -1,4 +1,4 @@
-with int_finance_card as (
+with calendar as (
 
 	select 
 		*
