@@ -33,6 +33,7 @@ money as (
         transaction_id,
         transaction_date,
         transaction_timestamp,
+        --count(transaction_id) as operation_num,
         case when tr_sub_type = 'payment_received' then true else false end as is_income,
         tr_sub_type,
         payment_type,

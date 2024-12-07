@@ -8,10 +8,11 @@ with stg_gs_transactions_kasa as (
 
 final as (
     select 
-        week_start_date,
-        week_end_date,
+        --week_start_date,
+        --week_end_date,
+        transaction_date,
         payment_type,
-        TRUE as is_income,
+        is_income,
         'payment_received' as tr_sub_type,
         operation_num,
         total_sum
