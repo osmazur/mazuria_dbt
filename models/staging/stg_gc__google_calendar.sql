@@ -19,6 +19,8 @@ final as (
         end_time as event_end_time,
 
         guests as event_guests,
+        teacher as event_teacher,
+        lesson_type as event_lesson_type,
         is_finished,
         color as event_color,
         description as event_description,
