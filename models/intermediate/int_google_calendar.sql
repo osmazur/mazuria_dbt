@@ -16,6 +16,7 @@ prep as (
         event_end_date,
         event_end_time,
         event_end_time - event_start_time as event_time_spent,
+       
 -- other
         event_guests,
         -- event_teacher,
@@ -29,4 +30,4 @@ prep as (
     where event_title != 'Неробочий час'
 )
 
-select * from prep
+select *, EXTRACT(EPOCH FROM event_time_spent) / 3600 AS "event_time_spent_to_num" from prep
