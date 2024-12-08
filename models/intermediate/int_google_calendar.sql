@@ -28,6 +28,20 @@ prep as (
         loaded_at
     from stg_gc__google_calendar
     where event_title != 'Неробочий час'
+),
+
+final as (
+    select 
+        *, 
+        EXTRACT(EPOCH FROM event_time_spent) / 3600 AS "event_time_spent_to_num",
+        case 
+            when 
+                event_teacher is not null 
+            then
+                row_number() over(partition by event_start_date, event_start_time, event_end_date, event_teacher order by  event_id)
+            else 1
+        end as rn
+    from prep
 )
 
-select *, EXTRACT(EPOCH FROM event_time_spent) / 3600 AS "event_time_spent_to_num" from prep
+select * from final where rn = 1
