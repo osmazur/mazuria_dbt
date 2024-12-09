@@ -19,7 +19,7 @@ prep as (
 		    then 'payment_received'
 		    when  doc_type = 'm' and transaction_type_code = 'D'
 		    then 'komisiya'
-		    when (doc_type = 'p' and transaction_type_code = 'D' and uetr is null) or transaction_id = '3598543753'
+		    when (doc_type = 'p' and transaction_type_code = 'D' and uetr is null) or transaction_id in ('3598543753', '3703526170')
 		    then 'salary'
 		    else 'payment_sent' 
 		end as tr_sub_type
