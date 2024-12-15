@@ -2,7 +2,7 @@ with calendar as (
 
 	select 
 		*
-	from {{ref('int_calendar')}}
+	from {{ref('stg_calendar')}}
 
 )
 
