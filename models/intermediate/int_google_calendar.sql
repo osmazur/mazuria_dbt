@@ -21,6 +21,7 @@ prep as (
         event_guests,
         -- event_teacher,
         REPLACE(split_part(event_teacher, '@', 1),'.',' ') AS event_teacher,
+        event_teacher as event_teacher_email,
         split_part(event_lesson_type, '@', 1) AS event_lesson_type,
         -- event_lesson_type,
         is_finished,
