@@ -14,16 +14,15 @@ int_google_calendar as (
 stg_gs_teachers as (
 
 	select * from {{ref('stg_gs_teachers')}}
-    where teacher_mazuria_email in ('myroslava.hovda@teacher.com', 'iryna.zamriy@teacher.com', 'galyna.chyzhevska@teacher.com')
 ),
 
 teach_cross as (
 
     select 
-        month_end_date, 
+        c.month_end_date, 
         t.teacher_mazuria_email
     from stg_calendar as c
-    cross join stg_gs_teachers as t 
+    cross join stg_gs_teachers as t
     group by 1,2
 ),
 
@@ -47,14 +46,16 @@ total_hours as (
         t.defrate,
         t.fullrate,
         case 
-            when hrate is null then fullrate - defrate
-            when defrate is null then total_hours * hrate
+            when fullrate is null and hrate is null then defrate
+            when hrate is null and defrate is not null then fullrate - defrate 
+            when defrate is null and hrate is not null then total_hours * hrate
             when defrate is not null and fullrate is null then (total_hours * hrate) - defrate
         else 0
-        end as stopay
+        end as stopay,
+        case when fullrate is null and hrate is null then defrate else 0 end as tst
     from teach_cross as tc
     left join total_hours as th on th.month_end_date = tc.month_end_date and tc.teacher_mazuria_email = th.event_teacher_email
-    left join stg_gs_teachers as t on t.teacher_mazuria_email = tc.teacher_mazuria_email
+    inner join stg_gs_teachers as t on t.teacher_mazuria_email = tc.teacher_mazuria_email and tc.month_end_date >= t.teacher_end_month
 )
 
 select * from prep

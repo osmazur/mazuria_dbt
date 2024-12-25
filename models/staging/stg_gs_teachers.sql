@@ -15,6 +15,7 @@ final as (
         full_name as teacher_full_name,
         phone as teacher_phone,
         date(start_date) as teacher_start_date,
+        date(end_month) as teacher_end_month,
         date(end_date) as teacher_end_date,
         birthday,
         employment_type,
