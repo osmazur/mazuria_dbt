@@ -18,7 +18,7 @@ int_finance_man as (
 
 	select 
 		*
-	from {{ref('int_finance_man')}}
+	from {{ref('int_finance_off')}}
 
 ),
 
@@ -31,6 +31,7 @@ card as (
         tr_sub_type,
         total_sum
     from int_finance_card
+    where transaction_date is not null
 ),
 
 cash as (
@@ -42,13 +43,14 @@ cash as (
         tr_sub_type,
         total_sum
     from int_finance_cash
+    where transaction_date is not null
 ),
 
-man as (
+off as (
 
     select
         month_end_date as transaction_date,
-        'man' payment_type,
+        'off' payment_type,
         false as is_income,
         'salary' as tr_sub_type,
         sum(stopay) as total_sum
@@ -60,4 +62,4 @@ select * from card
 union all
 select * from cash
 union all
-select * from man
+select * from off
