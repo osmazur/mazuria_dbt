@@ -7,3 +7,32 @@ models:
         tests:
           - unique
           - not_null
+      - name: transaction_date
+        tests:
+          - not_null
+          
+  - name: stg_gs_transactions_kasa
+    columns:
+      - name: transaction_date
+        tests:
+          - not_null
+      - name: total_sum
+        tests:
+          - not_null
+      - name: date_added
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_gs_teachers
+    columns:
+      - name: teacher_mazuria_email
+        tests:
+          - not_null
+
+  - name: stg_gc__google_calendar
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
