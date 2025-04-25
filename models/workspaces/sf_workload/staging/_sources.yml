@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw_sf
+    database: mazuria
+    schema: embucket
+
+    tables:
+      - name: sf_sql_func_cnt
+      - name: sf_sql_func_dict_all
+      - name: sf_sql_func_cnt_compl
+      - name: sf_sql_func_cnt_all
+      - name: sf_sql_func_dict_pagename
+      - name: sf_sql_qs_cnt_all
+      - name: sf_sql_func_cnt_all_pack
+      - name: sf_sql_qs_cnt_all_pack

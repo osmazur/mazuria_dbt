@@ -7,7 +7,7 @@
     {%- elif target.name == 'uat' -%}
         dbt_uat_{{ custom_schema_name | trim }}
     {%- elif target.user == 'oleksandrmazur' -%}
-        dbt_{{target.user}}
+        embucket
     {%- elif target.name == 'prod_ci_job' -%}
         dbt_prod_ci
     {%- elif target.name == 'uat_ci_job' -%}

@@ -1,0 +1,729 @@
+page_name,category_name
+array_union_agg,Aggregate
+avg,Aggregate
+corr,Aggregate
+count,Aggregate
+count_if,Aggregate
+covar_pop,Aggregate
+covar_samp,Aggregate
+listagg,Aggregate
+max,Aggregate
+max_by,Aggregate
+median,Aggregate
+min,Aggregate
+min_by,Aggregate
+mode,Aggregate
+percentile_cont,Aggregate
+percentile_disc,Aggregate
+stddev,Aggregate
+stddev_pop,Aggregate
+sum,Aggregate
+var_pop,Aggregate
+var_samp,Aggregate
+booland_agg,Aggregate
+boolor_agg,Aggregate
+boolxor_agg,Aggregate
+regr_avgx,Aggregate
+regr_avgy,Aggregate
+regr_count,Aggregate
+regr_intercept,Aggregate
+regr_r2,Aggregate
+regr_slope,Aggregate
+regr_sxx,Aggregate
+regr_sxy,Aggregate
+regr_syy,Aggregate
+kurtosis,Aggregate
+skew,Aggregate
+approx_count_distinct,Aggregate
+hll,Aggregate
+hll_accumulate,Aggregate
+hll_combine,Aggregate
+hll_estimate,Aggregate
+hll_export,Aggregate
+approximate_jaccard_index,Aggregate
+approximate_similarity,Aggregate
+minhash,Aggregate
+minhash_combine,Aggregate
+approx_top_k,Aggregate
+approx_top_k_accumulate,Aggregate
+approx_top_k_combine,Aggregate
+approx_top_k_estimate,Aggregate
+approx_percentile,Aggregate
+approx_percentile_accumulate,Aggregate
+approx_percentile_combine,Aggregate
+approx_percentile_estimate,Aggregate
+grouping,Aggregate
+grouping_id,Aggregate
+bitand,Bitwise expression
+bitand_agg,Bitwise expression
+bitnot,Bitwise expression
+bitor,Bitwise expression
+bitor_agg,Bitwise expression
+bitshiftleft,Bitwise expression
+bitshiftright,Bitwise expression
+bitxor,Bitwise expression
+bitxor_agg,Bitwise expression
+getbit,Bitwise expression
+between,Conditional expression
+booland,Conditional expression
+boolnot,Conditional expression
+boolor,Conditional expression
+boolxor,Conditional expression
+case,Conditional expression
+coalesce,Conditional expression
+decode,Conditional expression
+equal_null,Conditional expression
+greatest,Conditional expression
+greatest_ignore_nulls,Conditional expression
+iff,Conditional expression
+ifnull,Conditional expression
+in,Conditional expression
+is-distinct-from,Conditional expression
+is-null,Conditional expression
+least,Conditional expression
+least_ignore_nulls,Conditional expression
+nullif,Conditional expression
+nullifzero,Conditional expression
+nvl,Conditional expression
+nvl2,Conditional expression
+regr_valx,Conditional expression
+regr_valy,Conditional expression
+zeroifnull,Conditional expression
+current_client,Context
+current_date,Context
+current_ip_address,Context
+current_region,Context
+current_time,Context
+current_timestamp,Context
+current_version,Context
+getdate,Context
+localtime,Context
+localtimestamp,Context
+sysdate,Context
+systimestamp,Context
+all_user_names,Context
+current_account,Context
+current_account_name,Context
+current_organization_name,Context
+current_role,Context
+current_available_roles,Context
+current_secondary_roles,Context
+current_session,Context
+current_statement,Context
+current_transaction,Context
+current_user,Context
+getvariable,Context
+last_query_id,Context
+last_transaction,Context
+current_database,Context
+current_role_type,Context
+current_schema,Context
+current_schemas,Context
+current_warehouse,Context
+invoker_role,Context
+invoker_share,Context
+is_application_role_in_session,Context
+is_database_role_in_session,Context
+is_granted_to_invoker_role,Context
+is_instance_role_in_session,Context
+is_role_in_session,Context
+policy_context,Context
+cast,Conversion
+try_cast,Conversion
+to_char,Conversion
+to_binary,Conversion
+try_to_binary,Conversion
+to_decimal,Conversion
+to_double,Conversion
+try_to_decimal,Conversion
+try_to_double,Conversion
+to_boolean,Conversion
+try_to_boolean,Conversion
+random,Data generation
+randstr,Data generation
+normal,Data generation
+uniform,Data generation
+zipf,Data generation
+seq1,Data generation
+dmf_blank_count,Data metric
+dmf_blank_percent,Data metric
+dmf_null_count,Data metric
+dmf_null_percent,Data metric
+dmf_data_metric_schedule_time,Data metric
+dmf_freshness,Data metric
+dmf_avg,Data metric
+dmf_min,Data metric
+dmf_max,Data metric
+dmf_stddev,Data metric
+dmf_duplicate_count,Data metric
+dmf_unique_count,Data metric
+to_date,Date & time
+to_time,Date & time
+to_timestamp,Date & time
+try_to_date,Date & time
+try_to_time,Date & time
+try_to_timestamp,Date & time
+date_from_parts,Date & time
+time_from_parts,Date & time
+timestamp_from_parts,Date & time
+date_part,Date & time
+dayname,Date & time
+extract,Date & time
+hour-minute-second,Date & time
+last_day,Date & time
+monthname,Date & time
+next_day,Date & time
+previous_day,Date & time
+year,Date & time
+add_months,Date & time
+dateadd,Date & time
+datediff,Date & time
+months_between,Date & time
+timeadd,Date & time
+timediff,Date & time
+timestampadd,Date & time
+date_trunc,Date & time
+time_slice,Date & time
+trunc2,Date & time
+convert_timezone,Date & time
+dp_interval_high,Differential privacy
+dp_interval_low,Differential privacy
+estimate_remaining_dp_aggregates,Differential privacy
+encrypt,Encryption
+decrypt,Encryption
+encrypt_raw,Encryption
+decrypt_raw,Encryption
+get_stage_location,File
+get_relative_path,File
+get_absolute_path,File
+get_presigned_url,File
+build_scoped_file_url,File
+build_stage_file_url,File
+functions-regexp,Function and stored procedure reference
+functions-context,Function and stored procedure reference
+functions-conversion,Function and stored procedure reference
+functions-date-time,Function and stored procedure reference
+functions-aggregation,Function and stored procedure reference
+to_geography,Geospatial
+try_to_geography,Geospatial
+st_geographyfromwkb,Geospatial
+st_geographyfromwkt,Geospatial
+to_geometry,Geospatial
+try_to_geometry,Geospatial
+st_geometryfromwkb,Geospatial
+st_geometryfromwkt,Geospatial
+st_geogfromgeohash,Geospatial
+st_geogpointfromgeohash,Geospatial
+st_geomfromgeohash,Geospatial
+st_geompointfromgeohash,Geospatial
+st_asgeojson,Geospatial
+st_aswkb,Geospatial
+st_asewkb,Geospatial
+st_aswkt,Geospatial
+st_asewkt,Geospatial
+st_geohash,Geospatial
+st_makeline,Geospatial
+st_makepoint,Geospatial
+st_makepolygon,Geospatial
+st_makepolygonoriented,Geospatial
+st_dimension,Geospatial
+st_endpoint,Geospatial
+st_pointn,Geospatial
+st_srid,Geospatial
+st_startpoint,Geospatial
+st_x,Geospatial
+st_xmax,Geospatial
+st_xmin,Geospatial
+st_y,Geospatial
+st_ymax,Geospatial
+st_ymin,Geospatial
+st_area,Geospatial
+st_azimuth,Geospatial
+st_contains,Geospatial
+st_coveredby,Geospatial
+st_covers,Geospatial
+st_disjoint,Geospatial
+st_distance,Geospatial
+st_dwithin,Geospatial
+st_hausdorffdistance,Geospatial
+st_intersects,Geospatial
+st_length,Geospatial
+st_npoints,Geospatial
+st_perimeter,Geospatial
+st_within,Geospatial
+st_buffer,Geospatial
+st_centroid,Geospatial
+st_collect,Geospatial
+st_difference,Geospatial
+st_envelope,Geospatial
+st_interpolate,Geospatial
+st_intersection,Geospatial
+st_intersection_agg,Geospatial
+st_setsrid,Geospatial
+st_simplify,Geospatial
+st_symdifference,Geospatial
+st_transform,Geospatial
+st_union,Geospatial
+st_union_agg,Geospatial
+h3_cell_to_boundary,Geospatial
+h3_cell_to_children,Geospatial
+h3_cell_to_children_string,Geospatial
+h3_cell_to_parent,Geospatial
+h3_cell_to_point,Geospatial
+h3_compact_cells,Geospatial
+h3_compact_cells_strings,Geospatial
+h3_coverage,Geospatial
+h3_coverage_strings,Geospatial
+h3_get_resolution,Geospatial
+h3_grid_disk,Geospatial
+h3_grid_distance,Geospatial
+h3_grid_path,Geospatial
+h3_int_to_string,Geospatial
+h3_is_pentagon,Geospatial
+h3_is_valid_cell,Geospatial
+h3_latlng_to_cell,Geospatial
+h3_latlng_to_cell_string,Geospatial
+h3_point_to_cell,Geospatial
+h3_point_to_cell_string,Geospatial
+h3_polygon_to_cells,Geospatial
+h3_polygon_to_cells_strings,Geospatial
+h3_string_to_int,Geospatial
+h3_try_coverage,Geospatial
+h3_try_coverage_strings,Geospatial
+h3_try_grid_distance,Geospatial
+h3_try_grid_path,Geospatial
+h3_try_polygon_to_cells,Geospatial
+h3_try_polygon_to_cells_strings,Geospatial
+h3_uncompact_cells,Geospatial
+h3_uncompact_cells_strings,Geospatial
+hash,Hash
+hash_agg,Hash
+generate_column_description,Metadata
+get_ddl,Metadata
+div0,Numeric
+div0null,Numeric
+abs,Numeric
+ceil,Numeric
+floor,Numeric
+mod,Numeric
+round,Numeric
+sign,Numeric
+trunc,Numeric
+cbrt,Numeric
+exp,Numeric
+factorial,Numeric
+pow,Numeric
+sqrt,Numeric
+square,Numeric
+ln,Numeric
+log,Numeric
+acos,Numeric
+acosh,Numeric
+asin,Numeric
+asinh,Numeric
+atan,Numeric
+atan2,Numeric
+atanh,Numeric
+cos,Numeric
+cosh,Numeric
+cot,Numeric
+degrees,Numeric
+pi,Numeric
+radians,Numeric
+sin,Numeric
+sinh,Numeric
+tan,Numeric
+tanh,Numeric
+width_bucket,Numeric
+regexp,Regular expressions
+regexp_count,Regular expressions
+regexp_instr,Regular expressions
+regexp_like,Regular expressions
+regexp_replace,Regular expressions
+regexp_substr,Regular expressions
+regexp_substr_all,Regular expressions
+rlike,Regular expressions
+check_json,Semi-structured and structured data
+check_xml,Semi-structured and structured data
+json_extract_path_text,Semi-structured and structured data
+parse_json,Semi-structured and structured data
+try_parse_json,Semi-structured and structured data
+parse_xml,Semi-structured and structured data
+strip_null_value,Semi-structured and structured data
+array_agg,Semi-structured and structured data
+array_append,Semi-structured and structured data
+array_cat,Semi-structured and structured data
+array_compact,Semi-structured and structured data
+array_construct,Semi-structured and structured data
+array_construct_compact,Semi-structured and structured data
+array_contains,Semi-structured and structured data
+array_distinct,Semi-structured and structured data
+array_except,Semi-structured and structured data
+array_flatten,Semi-structured and structured data
+array_generate_range,Semi-structured and structured data
+array_insert,Semi-structured and structured data
+array_intersection,Semi-structured and structured data
+array_max,Semi-structured and structured data
+array_min,Semi-structured and structured data
+array_position,Semi-structured and structured data
+array_prepend,Semi-structured and structured data
+array_remove,Semi-structured and structured data
+array_remove_at,Semi-structured and structured data
+array_reverse,Semi-structured and structured data
+array_size,Semi-structured and structured data
+array_slice,Semi-structured and structured data
+array_sort,Semi-structured and structured data
+array_to_string,Semi-structured and structured data
+arrays_overlap,Semi-structured and structured data
+arrays_to_object,Semi-structured and structured data
+arrays_zip,Semi-structured and structured data
+object_agg,Semi-structured and structured data
+object_construct,Semi-structured and structured data
+object_construct_keep_null,Semi-structured and structured data
+object_delete,Semi-structured and structured data
+object_insert,Semi-structured and structured data
+object_pick,Semi-structured and structured data
+filter,Semi-structured and structured data
+reduce,Semi-structured and structured data
+transform,Semi-structured and structured data
+map_cat,Semi-structured and structured data
+map_contains_key,Semi-structured and structured data
+map_delete,Semi-structured and structured data
+map_insert,Semi-structured and structured data
+map_keys,Semi-structured and structured data
+map_pick,Semi-structured and structured data
+map_size,Semi-structured and structured data
+get,Semi-structured and structured data
+get_ignore_case,Semi-structured and structured data
+get_path,Semi-structured and structured data
+object_keys,Semi-structured and structured data
+xmlget,Semi-structured and structured data
+as,Semi-structured and structured data
+as_array,Semi-structured and structured data
+as_binary,Semi-structured and structured data
+as_boolean,Semi-structured and structured data
+as_char-varchar,Semi-structured and structured data
+as_date,Semi-structured and structured data
+as_decimal-number,Semi-structured and structured data
+as_double-real,Semi-structured and structured data
+as_integer,Semi-structured and structured data
+as_object,Semi-structured and structured data
+as_time,Semi-structured and structured data
+as_timestamp,Semi-structured and structured data
+to_array,Semi-structured and structured data
+to_json,Semi-structured and structured data
+to_object,Semi-structured and structured data
+to_variant,Semi-structured and structured data
+to_xml,Semi-structured and structured data
+is,Semi-structured and structured data
+is_array,Semi-structured and structured data
+is_binary,Semi-structured and structured data
+is_boolean,Semi-structured and structured data
+is_char-varchar,Semi-structured and structured data
+is_date-value,Semi-structured and structured data
+is_decimal,Semi-structured and structured data
+is_double-real,Semi-structured and structured data
+is_integer,Semi-structured and structured data
+is_null_value,Semi-structured and structured data
+is_object,Semi-structured and structured data
+is_time,Semi-structured and structured data
+is_timestamp,Semi-structured and structured data
+typeof,Semi-structured and structured data
+associate_semantic_category_tags,Stored procedures
+system_classify,Stored procedures
+system_classify_schema,Stored procedures
+system_cancel_classify_schema,Stored procedures
+reset_privacy_budget,Stored procedures
+system_request_listing_and_wait,Stored procedures
+snowflake_telemetry_add_row_access_policy_on_events_view,Stored procedures
+snowflake_telemetry_drop_row_access_policy_on_events_view,Stored procedures
+generate_synthetic_data,Stored procedures
+uuid_string,String & binary
+strtok_to_array,String & binary
+ascii,String & binary
+bit_length,String & binary
+chr,String & binary
+concat,String & binary
+concat_ws,String & binary
+insert,String & binary
+length,String & binary
+lpad,String & binary
+ltrim,String & binary
+octet_length,String & binary
+parse_ip,String & binary
+parse_url,String & binary
+repeat,String & binary
+reverse,String & binary
+rpad,String & binary
+rtrim,String & binary
+rtrimmed_length,String & binary
+soundex,String & binary
+soundex_p123,String & binary
+space,String & binary
+split,String & binary
+split_part,String & binary
+strtok,String & binary
+translate,String & binary
+trim,String & binary
+unicode,String & binary
+search,String & binary
+search_ip,String & binary
+initcap,String & binary
+lower,String & binary
+upper,String & binary
+charindex,String & binary
+contains,String & binary
+editdistance,String & binary
+endswith,String & binary
+ilike,String & binary
+ilike_any,String & binary
+jarowinkler_similarity,String & binary
+left,String & binary
+like,String & binary
+like_all,String & binary
+like_any,String & binary
+position,String & binary
+replace,String & binary
+right,String & binary
+startswith,String & binary
+substr,String & binary
+compress,String & binary
+decompress_binary,String & binary
+decompress_string,String & binary
+base64_decode_binary,String & binary
+base64_decode_string,String & binary
+base64_encode,String & binary
+hex_decode_binary,String & binary
+hex_decode_string,String & binary
+hex_encode,String & binary
+try_base64_decode_binary,String & binary
+try_base64_decode_string,String & binary
+try_hex_decode_binary,String & binary
+try_hex_decode_string,String & binary
+md5,String & binary
+md5_binary,String & binary
+md5_number_lower64,String & binary
+md5_number_upper64,String & binary
+sha1,String & binary
+sha1_binary,String & binary
+sha2,String & binary
+sha2_binary,String & binary
+collate,String & binary
+collation,String & binary
+classify_text-snowflake-cortex,String & binary
+complete-snowflake-cortex,String & binary
+embed_text-snowflake-cortex,String & binary
+embed_text_1024-snowflake-cortex,String & binary
+extract_answer-snowflake-cortex,String & binary
+finetune-create,String & binary
+finetune-describe,String & binary
+finetune-show,String & binary
+finetune-cancel,String & binary
+sentiment-snowflake-cortex,String & binary
+summarize-snowflake-cortex,String & binary
+parse_document-snowflake-cortex,String & binary
+translate-snowflake-cortex,String & binary
+count_tokens-snowflake-cortex,String & binary
+search_preview-snowflake-cortex,String & binary
+split_text_recursive_character-snowflake-cortex,String & binary
+try_complete-snowflake-cortex,String & binary
+system_data_metric_scan,System
+system_abort_session,System
+system_abort_transaction,System
+system_add_event,System
+system_authorize_privatelink,System
+system_authorize_stage_privatelink_access,System
+system_block_internal_stages_public_access,System
+system_cancel_all_queries,System
+system_cancel_query,System
+system_cleanup_database_role_grants,System
+system_commit_move_organization_account,System
+system_convert_pipes_sqs_to_sns,System
+system_deprovision_privatelink_endpoint,System
+system_disable_behavior_change_bundle,System
+system_disable_database_replication,System
+system_disable_preview_access,System
+system_enable_behavior_change_bundle,System
+system_enable_preview_access,System
+system_global_account_set_parameter,System
+system_initiate_move_organization_account,System
+system_link_account_objects_by_name,System
+system_migrate_saml_idp_registration,System
+system_pipe_force_resume,System
+system_pipe_rebinding_with_notification_channel,System
+system_provision_privatelink_endpoint,System
+system_register_privatelink_endpoint,System
+system_restore_privatelink_endpoint,System
+system_revoke_privatelink,System
+system_revoke_stage_privatelink_access,System
+system_send_notifications_to_catalog,System
+system_set_application_restricted_feature_access,System
+system_set_event_sharing_account_for_region,System
+system_snowpipe_streaming_update_channel_offset_token,System
+system_task_dependents_enable,System
+system_unblock_internal_stages_public_access,System
+system_unregister_privatelink_endpoint,System
+system_unset_event_sharing_account_for_region,System
+system_user_task_cancel_ongoing_executions,System
+system_wait,System
+extract_semantic_categories,System
+get_anaconda_packages_repodata,System
+show_python_packages_dependencies,System
+system_allowlist,System
+system_allowlist_privatelink,System
+system_auto_refresh_status,System
+system_behavior_change_bundle_status,System
+system_client_version_info,System
+system_clustering_depth,System
+system_clustering_information,System
+system_clustering_ratio,System
+system_current_user_task_name,System
+system_database_refresh_history,System
+system_database_refresh_progress,System
+system_estimate_automatic_clustering_costs,System
+system_estimate_search_optimization_costs,System
+system_external_table_pipe_status,System
+system_finish_oauth_flow,System
+system_generate_saml_csr,System
+system_generate_scim_access_token,System
+system_get_aws_sns_iam_policy,System
+system_get_classification_result,System
+system_get_cmk_akv_consent_url,System
+system_get_cmk_config,System
+system_get_cmk_info,System
+system_get_cmk_kms_key_policy,System
+system_get_compute_pool_status,System
+system_get_directory_table_status,System
+system_get_gcp_kms_cmk_grant_access_cmd,System
+system_get_iceberg_table_information,System
+system_get_login_failure_details,System
+system_get_preview_access_status,System
+system_get_privatelink,System
+system_get_privatelink_authorized_endpoints,System
+system_get_privatelink_config,System
+system_get_privatelink_endpoints_info,System
+system_get_privatelink_endpoint_registrations,System
+system_get_service_dns_domain,System
+system_get_service_logs,System
+system_get_service_status,System
+system_get_snowflake_platform_info,System
+system_get_tag,System
+system_get_tag_allowed_values,System
+system_get_tag_on_current_column,System
+system_get_task_graph_config,System
+system_internal_stages_public_access_status,System
+system_is_application_installed_from_same_account,System
+system_is_application_sharing_events_with_provider,System
+system_is_listing_purchased,System
+system_is_listing_trial,System
+system_last_change_commit_time,System
+system_list_application_restricted_features,System
+system_list_iceberg_tables_from_catalog,System
+system_list_namespaces_from_catalog,System
+system_log,System
+system_pipe_status,System
+system_register_cmk_info,System
+system_registry_list_images,System
+system_set_return_value,System
+system_set_span_attributes,System
+system_show_active_behavior_change_bundles,System
+system_show_budgets_for_resource,System
+system_show_budgets_in_account,System
+system_show_event_sharing_accounts,System
+system_show_move_organization_account_status,System
+system_show_oauth_client_secrets,System
+system_stream_get_table_timestamp,System
+system_stream_has_data,System
+system_task_runtime_info,System
+system_typeof,System
+system_validate_storage_integration,System
+system_verify_catalog_integration,System
+system_verify_cmk_info,System
+system_verify_ext_oauth_token,System
+system_verify_external_volume,System
+system_whitelist,System
+system_wait_for_services,System
+system_whitelist_privatelink,System
+explain_json,System
+system_explain_plan_json,System
+system_explain_json_to_text,System
+flatten,Table
+infer_schema,Table
+validate,Table
+generator,Table
+split_to_table,Table
+strtok_split_to_table,Table
+cumulative_privacy_losses,Table
+get_object_references,Table
+to_query,Table
+result_scan,Table
+get_query_operator_stats,Table
+login_history,Table
+query_history,Table
+database_storage_usage_history,Table
+warehouse_load_history,Table
+warehouse_metering_history,Table
+stage_storage_usage_history,Table
+data_metric_function_references,Table
+data_quality_monitoring_results,Table
+get_lineage-snowflake-core,Table
+network_rule_references,Table
+policy_references,Table
+tag_references,Table
+tag_references_all_columns,Table
+tag_references_with_lineage,Table
+replication_group_refresh_history,Table
+replication_group_refresh_progress,Table
+replication_group_usage_history,Table
+serverless_alert_history,Table
+database_refresh_history,Table
+database_refresh_progress,Table
+database_replication_usage_history,Table
+replication_usage_history,Table
+copy_history,Table
+data_transfer_history,Table
+pipe_usage_history,Table
+stage_directory_file_registration_history,Table
+validate_pipe_load,Table
+automatic_clustering_history,Table
+dynamic_table_refresh_history,Table
+external_functions_history,Table
+auto_refresh_registration_history,Table
+external_table_files,Table
+external_table_registration_history,Table
+iceberg_table_files,Table
+iceberg_table_snapshot_refresh_history,Table
+available_listing_refresh_history,Table
+materialized_view_refresh_history,Table
+notification_history,Table
+rest_event_history,Table
+search_optimization_history,Table
+system_stream_backlog,Table
+complete_task_graphs,Table
+current_task_graphs,Table
+serverless_task_history,Table
+task_dependents,Table
+task_history,Table
+cortex_search_data_scan,Table
+vector_inner_product,Vector
+vector_l1_distance,Vector
+vector_l2_distance,Vector
+vector_cosine_similarity,Vector
+functions-window-syntax,Window
+conditional_change_event,Window
+conditional_true_event,Window
+ratio_to_report,Window
+cume_dist,Window
+dense_rank,Window
+first_value,Window
+lag,Window
+last_value,Window
+lead,Window
+nth_value,Window
+ntile,Window
+percent_rank,Window
+rank,Window
+row_number,Window
+timestampdiff,Date & time
+row_count,Data metric
+array_unique_agg,Aggregate

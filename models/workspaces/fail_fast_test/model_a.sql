@@ -1,1 +1,0 @@
-select * from {{ source('raw', 'mazuria_gs_raw_groups') }}
