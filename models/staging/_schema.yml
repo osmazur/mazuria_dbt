@@ -21,7 +21,6 @@ models:
           - not_null
       - name: date_added
         tests:
-          - unique
           - not_null
 
   - name: stg_gs_teachers

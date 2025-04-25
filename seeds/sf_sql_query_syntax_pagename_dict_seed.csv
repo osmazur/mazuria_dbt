@@ -1,0 +1,30 @@
+qs_name,qs_page_name,qs_url,qs_category_array,qs_category,qs_description
+select,select,https://docs.snowflake.com/en/sql-reference/sql/select,Query syntax,Query syntax,description
+with,with,https://docs.snowflake.com/en/sql-reference/constructs/with,Query syntax,Query syntax,description
+top,top_n,https://docs.snowflake.com/en/sql-reference/constructs/top_n,Query syntax,Query syntax,description
+into,into,https://docs.snowflake.com/en/sql-reference/constructs/into,Query syntax,Query syntax,description
+from,from,https://docs.snowflake.com/en/sql-reference/constructs/from,Query syntax,Query syntax,description
+at,at-before,https://docs.snowflake.com/en/sql-reference/constructs/at-before,Query syntax,Query syntax,description
+before,at-before,https://docs.snowflake.com/en/sql-reference/constructs/at-before,Query syntax,Query syntax,description
+changes,changes,https://docs.snowflake.com/en/sql-reference/constructs/changes,Query syntax,Query syntax,description
+connect by,connect-by,https://docs.snowflake.com/en/sql-reference/constructs/connect-by,Query syntax,Query syntax,description
+join,join,https://docs.snowflake.com/en/sql-reference/constructs/join,Query syntax,Query syntax,description
+asof join,asof-join,https://docs.snowflake.com/en/sql-reference/constructs/asof-join,Query syntax,Query syntax,description
+lateral,join-lateral,https://docs.snowflake.com/en/sql-reference/constructs/join-lateral,Query syntax,Query syntax,description
+match_recognize,match_recognize,https://docs.snowflake.com/en/sql-reference/constructs/match_recognize,Query syntax,Query syntax,description
+pivot,pivot,https://docs.snowflake.com/en/sql-reference/constructs/pivot,Query syntax,Query syntax,description
+unpivot,unpivot,https://docs.snowflake.com/en/sql-reference/constructs/unpivot,Query syntax,Query syntax,description
+values,values,https://docs.snowflake.com/en/sql-reference/constructs/values,Query syntax,Query syntax,description
+sample,sample,https://docs.snowflake.com/en/sql-reference/constructs/sample,Query syntax,Query syntax,description
+tablesample,sample,https://docs.snowflake.com/en/sql-reference/constructs/sample,Query syntax,Query syntax,description
+where,where,https://docs.snowflake.com/en/sql-reference/constructs/where,Query syntax,Query syntax,description
+group by,group-by,https://docs.snowflake.com/en/sql-reference/constructs/group-by,Query syntax,Query syntax,description
+group by cube,group-by-cube,https://docs.snowflake.com/en/sql-reference/constructs/group-by-cube,Query syntax,Query syntax,description
+group by grouping sets,group-by-grouping-sets,https://docs.snowflake.com/en/sql-reference/constructs/group-by-grouping-sets,Query syntax,Query syntax,description
+group by rollup,group-by-rollup,https://docs.snowflake.com/en/sql-reference/constructs/group-by-rollup,Query syntax,Query syntax,description
+having,having,https://docs.snowflake.com/en/sql-reference/constructs/having,Query syntax,Query syntax,description
+qualify,qualify,https://docs.snowflake.com/en/sql-reference/constructs/qualify,Query syntax,Query syntax,description
+order by,order-by,https://docs.snowflake.com/en/sql-reference/constructs/order-by,Query syntax,Query syntax,description
+limit,limit,https://docs.snowflake.com/en/sql-reference/constructs/limit,Query syntax,Query syntax,description
+fetch,limit,https://docs.snowflake.com/en/sql-reference/constructs/limit,Query syntax,Query syntax,description
+for update,for-update,https://docs.snowflake.com/en/sql-reference/constructs/for-update,Query syntax,Query syntax,description

@@ -46,8 +46,8 @@ models:
       enabled: true
       +schema: mrt
     workspaces:
-      +materialized: view
-      enabled: false
+      +materialized: table
+      enabled: true
 
 # seeds:
 #   mazuria_dbt:
