@@ -62,3 +62,5 @@ int_sf_func as (
 )
 
 select * from int_sf_func
+--where object_type = 'generate_ddl'
+--where object_type = 'generate_ddl'

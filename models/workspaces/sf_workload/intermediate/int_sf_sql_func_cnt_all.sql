@@ -53,6 +53,32 @@ stg_sf_sql_qs_cnt_all_pack as (
 
 ),
 
+stg_sf_sql_ddl_dml_cnt_all as (
+
+    select
+    project,
+        folder,
+        file,
+        function,
+        count,
+        added_at
+    from {{ref('stg_sf_sql_ddl_dml_cnt_all')}}
+
+),
+
+stg_sf_sql_ddl_dml_cnt_all_pack as (
+
+    select
+    project,
+        folder,
+        file,
+        function,
+        count,
+        added_at
+    from {{ref('stg_sf_sql_ddl_dml_cnt_all_pack')}}
+
+),
+
 
 unionall as (
 
@@ -63,6 +89,10 @@ unionall as (
     select *, 'query_syntax' as object_type from stg_sf_sql_qs_cnt_all
     union all
     select *, 'query_syntax' as object_type from stg_sf_sql_qs_cnt_all_pack
+    union all
+    select *, 'ddl_dml' as object_type from stg_sf_sql_ddl_dml_cnt_all
+    union all
+    select *, 'ddl_dml' as object_type from stg_sf_sql_ddl_dml_cnt_all_pack
     
     
 ),
@@ -77,9 +107,11 @@ renamed as (
         coalesce(count,0) as function_cnt,
         case 
             when project like ('%-pack-%') then 'package_compl'
-            when project in ('pr1-compl', 'pr2-compl', 'pr3', 'pr4') then 'real_world'
+            when project in ('pr-compl', 'pr-compl', 'pr1', 'pr2') then 'real_world'
             when project like ('%demo') then 'demo'
             when project like ('%notcompl') then 'package_all_not_compl'
+            when project like ('gitlab-run') then 'gitlab-run'
+            when project like ('%-run') then 'package-run'
             else project
         end as project_type,
         object_type,
@@ -91,4 +123,5 @@ renamed as (
 )
 
 select * from renamed
+--where object_type = 'ddl_dml'
 --select project from renamed group by 1
