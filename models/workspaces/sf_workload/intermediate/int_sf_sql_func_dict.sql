@@ -15,6 +15,13 @@ query_syntax_dict as (
     select * from {{ref('stg_sf_sql_qs_pagename_dict')}}
     
 ),
+
+ddl_dml_dict as (
+
+    select * from {{ref('stg_sf_sql_ddl_dml_pagename_dict')}}
+
+),
+
 functions_dict as (
 
 select 
@@ -56,3 +63,16 @@ select
     function_name_unified,
     'query_syntax' as object_type
 from query_syntax_dict
+union all 
+select
+    id,
+    function_name,
+    page_name,
+    url,
+    --category_array,
+    category,
+    description,
+    category_pn,
+    function_name_unified,
+    'ddl_dml' as object_type
+from ddl_dml_dict

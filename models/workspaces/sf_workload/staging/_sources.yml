@@ -14,3 +14,5 @@ sources:
       - name: sf_sql_qs_cnt_all
       - name: sf_sql_func_cnt_all_pack
       - name: sf_sql_qs_cnt_all_pack
+      - name: sf_sql_ddl_dml_cnt_all
+      - name: sf_sql_ddl_dml_cnt_all_pack

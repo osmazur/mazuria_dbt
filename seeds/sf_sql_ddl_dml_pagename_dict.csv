@@ -1,0 +1,439 @@
+ddl_dml_name,ddl_dml_page_name,ddl_dml_url,ddl_dml_category_array,ddl_dml_category,ddl_dml_description
+alter,alter,https://docs.snowflake.com/en/sql-reference/sql/alter,ddl,ddl,"Modifies the metadata of an account-level or database object, or the parameters for a session."
+alter account,alter-account,https://docs.snowflake.com/en/sql-reference/sql/alter-account,ddl,ddl,Modifies an account.
+alter aggregation policy,alter-aggregation-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-aggregation-policy,ddl,ddl,Replaces the existing rules or comment of an aggregation policy.
+alter alert,alter-alert,https://docs.snowflake.com/en/sql-reference/sql/alter-alert,ddl,ddl,Modifies the properties of an existing alert and suspends or resumes an existing alert.
+alter api integration,alter-api-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-api-integration,ddl,ddl,Modifies the properties of an existing API integration.
+alter application,alter-application,https://docs.snowflake.com/en/sql-reference/sql/alter-application,ddl,ddl,Modifies the properties of an installed
+alter application package,alter-application-package,https://docs.snowflake.com/en/sql-reference/sql/alter-application-package,ddl,ddl,Modifies the properties of an existing application package in the Native Apps Framework.
+alter application role,alter-application-role,https://docs.snowflake.com/en/sql-reference/sql/alter-application-role,ddl,ddl,Modifies the properties for an existing application role.
+alter authentication policy,alter-authentication-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-authentication-policy,ddl,ddl,Modifies the properties of an authentication policy.
+alter catalog integration,alter-catalog-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-catalog-integration,ddl,ddl,Modifies the properties of an existing catalog integration.
+alter compute pool,alter-compute-pool,https://docs.snowflake.com/en/sql-reference/sql/alter-compute-pool,ddl,ddl,Modifies the properties of an existing compute pool.
+alter connection,alter-connection,https://docs.snowflake.com/en/sql-reference/sql/alter-connection,ddl,ddl,Modifies the properties for an existing connection.
+alter cortex search service,alter-cortex-search,https://docs.snowflake.com/en/sql-reference/sql/alter-cortex-search,ddl,ddl,"Suspends, resumes, or modifies the properties of an existing Cortex Search service."
+alter database,alter-database,https://docs.snowflake.com/en/sql-reference/sql/alter-database,ddl,ddl,Modifies the properties for an existing database.
+alter database role,alter-database-role,https://docs.snowflake.com/en/sql-reference/sql/alter-database-role,ddl,ddl,Modifies the properties for an existing database role.
+alter dataset,alter-dataset,https://docs.snowflake.com/en/sql-reference/sql/alter-dataset,ddl,ddl,Modifies a dataset by adding or dropping dataset versions.
+alter dynamic table,alter-dynamic-table,https://docs.snowflake.com/en/sql-reference/sql/alter-dynamic-table,ddl,ddl,Modifies the properties of a dynamic table.
+alter external access integration,alter-external-access-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-external-access-integration,ddl,ddl,Modifies the properties of an existing external access integration.
+alter external table,alter-external-table,https://docs.snowflake.com/en/sql-reference/sql/alter-external-table,ddl,ddl,"Modifies the properties, columns, or constraints for an existing external table."
+alter external volume,alter-external-volume,https://docs.snowflake.com/en/sql-reference/sql/alter-external-volume,ddl,ddl,Modifies the properties for an existing external volume.
+alter failover group,alter-failover-group,https://docs.snowflake.com/en/sql-reference/sql/alter-failover-group,ddl,ddl,Modifies the properties for an existing failover group.
+alter file format,alter-file-format,https://docs.snowflake.com/en/sql-reference/sql/alter-file-format,ddl,ddl,Modifies the properties for an existing file format object.
+alter function,alter-function,https://docs.snowflake.com/en/sql-reference/sql/alter-function,ddl,ddl,Modifies the properties of an existing user-defined or external function.
+alter git repository,alter-git-repository,https://docs.snowflake.com/en/sql-reference/sql/alter-git-repository,ddl,ddl,Modifies the properties of an existing Git repository stage.
+alter iceberg table,alter-iceberg-table,https://docs.snowflake.com/en/sql-reference/sql/alter-iceberg-table,ddl,ddl,Modifies properties such as clustering options and tags for an existing Apache Iceberg™ table.
+alter integration,alter-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-integration,ddl,ddl,Modifies the properties for an existing integration.
+alter join policy,alter-join-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-join-policy,ddl,ddl,Replaces the existing rules or comment for a join policy.
+alter listing,alter-listing,https://docs.snowflake.com/en/sql-reference/sql/alter-listing,ddl,ddl,"Modifies the properties of a listings with an inline YAML manifest, or from a file located in a stage location."
+alter masking policy,alter-masking-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-masking-policy,ddl,ddl,Replaces the existing masking policy rules with new rules or a new comment and allows the renaming of a masking policy.
+alter materialized view,alter-materialized-view,https://docs.snowflake.com/en/sql-reference/sql/alter-materialized-view,ddl,ddl,Alters a materialized view in the current/specified schema.
+alter model,alter-model,https://docs.snowflake.com/en/sql-reference/sql/alter-model,ddl,ddl,"Modifies the properties for an existing model, including its name, tags, default version, or comment."
+alter model monitor,alter-model-monitor,https://docs.snowflake.com/en/sql-reference/sql/alter-model-monitor,ddl,ddl,Modifies the properties of a model monitor.
+alter network policy,alter-network-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-network-policy,ddl,ddl,Modifies the properties for an existing network policy.
+alter network rule,alter-network-rule,https://docs.snowflake.com/en/sql-reference/sql/alter-network-rule,ddl,ddl,Modifies an existing network rule.
+alter notebook,alter-notebook,https://docs.snowflake.com/en/sql-reference/sql/alter-notebook,ddl,ddl,Modifies the properties of an existing notebook.
+alter notification integration,alter-notification-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-notification-integration,ddl,ddl,Modifies the properties for an existing notification integration.
+alter organization account,alter-organization-account,https://docs.snowflake.com/en/sql-reference/sql/alter-organization-account,ddl,ddl,Modifies the properties of an existing organization account.
+alter organization profile,alter-organization-profile,https://docs.snowflake.com/en/sql-reference/sql/alter-organization-profile,ddl,ddl,Modifies the properties of an organization profile.
+alter packages policy,alter-packages-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-packages-policy,ddl,ddl,Modifies the properties for an existing packages policy.
+alter password policy,alter-password-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-password-policy,ddl,ddl,Modifies the properties for an existing password policy.
+alter pipe,alter-pipe,https://docs.snowflake.com/en/sql-reference/sql/alter-pipe,ddl,ddl,Modifies a limited set of properties for an existing pipe object.
+alter privacy policy,alter-privacy-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-privacy-policy,ddl,ddl,Modifies the properties of an existing privacy policy.
+alter procedure,alter-procedure,https://docs.snowflake.com/en/sql-reference/sql/alter-procedure,ddl,ddl,Modifies the properties for an existing stored procedure.
+alter projection policy,alter-projection-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-projection-policy,ddl,ddl,Replaces the existing projection policy rules with new rules or a new comment and allows the renaming of a projection policy.
+alter replication group,alter-replication-group,https://docs.snowflake.com/en/sql-reference/sql/alter-replication-group,ddl,ddl,Modifies the properties for an existing replication group.
+alter resource monitor,alter-resource-monitor,https://docs.snowflake.com/en/sql-reference/sql/alter-resource-monitor,ddl,ddl,Modifies the properties and triggers for an existing resource monitor.
+alter role,alter-role,https://docs.snowflake.com/en/sql-reference/sql/alter-role,ddl,ddl,Modifies the properties for an existing custom role.
+alter row access policy,alter-row-access-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-row-access-policy,ddl,ddl,"Modifies the properties for an existing row access policy, including renaming the policy or replacing the policy rules."
+alter schema,alter-schema,https://docs.snowflake.com/en/sql-reference/sql/alter-schema,ddl,ddl,"Modifies the properties for an existing schema, including renaming the schema or swapping it with another schema, and changing the Time Travel data retention period (if you are using Snowflake Enterprise Edition or higher)."
+alter secret,alter-secret,https://docs.snowflake.com/en/sql-reference/sql/alter-secret,ddl,ddl,Modifies the properties of an existing secret.
+alter security integration,alter-security-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-security-integration,ddl,ddl,Modifies the properties for an existing security integration.
+alter sequence,alter-sequence,https://docs.snowflake.com/en/sql-reference/sql/alter-sequence,ddl,ddl,Modifies the properties for an existing sequence.
+alter service,alter-service,https://docs.snowflake.com/en/sql-reference/sql/alter-service,ddl,ddl,"Modifies Snowpark Container Services service configuration, upgrades the code for the service, and allows you to suspend or resume a service."
+alter session,alter-session,https://docs.snowflake.com/en/sql-reference/sql/alter-session,ddl,ddl,Sets parameters that change the behavior for the current session.
+alter session policy,alter-session-policy,https://docs.snowflake.com/en/sql-reference/sql/alter-session-policy,ddl,ddl,Modifies the properties for an existing session policy.
+alter share,alter-share,https://docs.snowflake.com/en/sql-reference/sql/alter-share,ddl,ddl,Modifies the properties for an existing share.
+alter snapshot,alter-snapshot,https://docs.snowflake.com/en/sql-reference/sql/alter-snapshot,ddl,ddl,Modifies the properties of an existing snapshot.
+alter stage,alter-stage,https://docs.snowflake.com/en/sql-reference/sql/alter-stage,ddl,ddl,Modifies the properties for an existing named internal or external stage.
+alter storage integration,alter-storage-integration,https://docs.snowflake.com/en/sql-reference/sql/alter-storage-integration,ddl,ddl,Modifies the properties for an existing storage integration.
+alter stream,alter-stream,https://docs.snowflake.com/en/sql-reference/sql/alter-stream,ddl,ddl,"Modifies the properties, columns, or constraints for an existing stream."
+alter streamlit,alter-streamlit,https://docs.snowflake.com/en/sql-reference/sql/alter-streamlit,ddl,ddl,Modifies the properties of an existing Streamlit object.
+alter table,alter-table,https://docs.snowflake.com/en/sql-reference/sql/alter-table,ddl,ddl,"Modifies the properties, columns, or constraints for an existing table."
+alter table … alter column,alter-table-column,https://docs.snowflake.com/en/sql-reference/sql/alter-table-column,ddl,ddl,This topic describes how to modify one or more column properties for a table using an ALTER COLUMN clause in a ALTER TABLE statement.
+alter tag,alter-tag,https://docs.snowflake.com/en/sql-reference/sql/alter-tag,ddl,ddl,"Modifies the properties for an existing tag, including renaming the tag and setting a masking policy on a tag."
+alter task,alter-task,https://docs.snowflake.com/en/sql-reference/sql/alter-task,ddl,ddl,Modifies the properties for an existing task.
+alter user,alter-user,https://docs.snowflake.com/en/sql-reference/sql/alter-user,ddl,ddl,Modifies the properties and object/session parameters for an existing user in the system.
+alter view,alter-view,https://docs.snowflake.com/en/sql-reference/sql/alter-view,ddl,ddl,Modifies the properties for an existing view.
+alter warehouse,alter-warehouse,https://docs.snowflake.com/en/sql-reference/sql/alter-warehouse,ddl,ddl,"Suspends or resumes a virtual warehouse, or aborts all queries (and other SQL statements) for a warehouse."
+begin,begin,https://docs.snowflake.com/en/sql-reference/sql/begin,ddl,ddl,Begins a transaction in the current session.
+call,call,https://docs.snowflake.com/en/sql-reference/sql/call,ddl,ddl,Calls a stored procedure.
+comment,comment,https://docs.snowflake.com/en/sql-reference/sql/comment,ddl,ddl,Adds a comment or overwrites an existing comment for an existing object.
+commit,commit,https://docs.snowflake.com/en/sql-reference/sql/commit,ddl,ddl,Commits an open transaction in the current session.
+copy files,copy-files,https://docs.snowflake.com/en/sql-reference/sql/copy-files,ddl,ddl,Copy files from a source stage to an output stage.
+copy into,copy-into-table,https://docs.snowflake.com/en/sql-reference/sql/copy-into-table,ddl,ddl,Loads data from files to an existing table.
+create,create,https://docs.snowflake.com/en/sql-reference/sql/create,ddl,ddl,Creates a new object of the specified type.
+create account,create-account,https://docs.snowflake.com/en/sql-reference/sql/create-account,ddl,ddl,Creates a new account in your organization.
+create aggregation policy,create-aggregation-policy,https://docs.snowflake.com/en/sql-reference/sql/create-aggregation-policy,ddl,ddl,Creates a new aggregation policy in the current/specified schema or replaces an existing aggregation policy.
+create alert,create-alert,https://docs.snowflake.com/en/sql-reference/sql/create-alert,ddl,ddl,Creates a new alert in the current schema.
+create api integration,create-api-integration,https://docs.snowflake.com/en/sql-reference/sql/create-api-integration,ddl,ddl,Creates a new API integration object in the account or replaces an existing API integration.
+create application,create-application,https://docs.snowflake.com/en/sql-reference/sql/create-application,ddl,ddl,Creates a new application object using an application package or listing.
+create application package,create-application-package,https://docs.snowflake.com/en/sql-reference/sql/create-application-package,ddl,ddl,Creates a new application package that contains the data content and application logic of
+create application role,create-application-role,https://docs.snowflake.com/en/sql-reference/sql/create-application-role,ddl,ddl,Creates a new application role or replaces an existing application role.
+create authentication policy,create-authentication-policy,https://docs.snowflake.com/en/sql-reference/sql/create-authentication-policy,ddl,ddl,Creates a new authentication policy in the current or specified schema or replaces an existing authentication policy.
+create catalog integration,create-catalog-integration,https://docs.snowflake.com/en/sql-reference/sql/create-catalog-integration,ddl,ddl,Creates a new catalog integration for Apache Iceberg™ tables in the account or replaces an existing catalog integration.
+create compute pool,create-compute-pool,https://docs.snowflake.com/en/sql-reference/sql/create-compute-pool,ddl,ddl,Creates a new compute pool in the current account.
+create connection,create-connection,https://docs.snowflake.com/en/sql-reference/sql/create-connection,ddl,ddl,Creates a new connection in the account.
+create cortex search service,create-cortex-search,https://docs.snowflake.com/en/sql-reference/sql/create-cortex-search,ddl,ddl,Creates a new Cortex Search service or replaces an existing one.
+create data metric function,create-data-metric-function,https://docs.snowflake.com/en/sql-reference/sql/create-data-metric-function,ddl,ddl,"Creates a new data metric function (DMF) in the current or specified schema, or replaces an existing data metric function."
+create database,create-database,https://docs.snowflake.com/en/sql-reference/sql/create-database,ddl,ddl,Creates a new database in the system.
+create database role,create-database-role,https://docs.snowflake.com/en/sql-reference/sql/create-database-role,ddl,ddl,Create a new database role or replace an existing database role in the system.
+create dataset,create-dataset,https://docs.snowflake.com/en/sql-reference/sql/create-dataset,ddl,ddl,Creates a new dataset in the current schema or the schema that you specify.
+create dynamic table,create-dynamic-table,https://docs.snowflake.com/en/sql-reference/sql/create-dynamic-table,ddl,ddl,"Creates a dynamic table, based on a specified query."
+create event table,create-event-table,https://docs.snowflake.com/en/sql-reference/sql/create-event-table,ddl,ddl,"Creates an event table that captures events, including logged messages from functions and procedures."
+create external access integration,create-external-access-integration,https://docs.snowflake.com/en/sql-reference/sql/create-external-access-integration,ddl,ddl,Creates an external access integration for access to external network locations from a UDF or procedure handler.
+create external function,create-external-function,https://docs.snowflake.com/en/sql-reference/sql/create-external-function,ddl,ddl,Creates a new external function.
+create external table,create-external-table,https://docs.snowflake.com/en/sql-reference/sql/create-external-table,ddl,ddl,Creates a new external table in the current/specified schema or replaces an existing external table.
+create external volume,create-external-volume,https://docs.snowflake.com/en/sql-reference/sql/create-external-volume,ddl,ddl,Creates a new external volume for Apache Iceberg™ tables in the account or replaces an existing external volume.
+create failover group,create-failover-group,https://docs.snowflake.com/en/sql-reference/sql/create-failover-group,ddl,ddl,Creates a new failover group of specified objects in the system.
+create file format,create-file-format,https://docs.snowflake.com/en/sql-reference/sql/create-file-format,ddl,ddl,Creates a named file format that describes a set of staged data to access or load into Snowflake tables.
+create function,create-function,https://docs.snowflake.com/en/sql-reference/sql/create-function,ddl,ddl,Creates a new UDF (user-defined function).
+create git repository,create-git-repository,https://docs.snowflake.com/en/sql-reference/sql/create-git-repository,ddl,ddl,Creates a Git repository stage in the schema or replaces an existing Git repository stage.
+create hybrid table,create-hybrid-table,https://docs.snowflake.com/en/sql-reference/sql/create-hybrid-table,ddl,ddl,Creates a new hybrid table in the current/specified schema or replaces an existing table.
+create iceberg table,create-iceberg-table,https://docs.snowflake.com/en/sql-reference/sql/create-iceberg-table,ddl,ddl,Creates or replaces an Apache Iceberg™ table in the current/specified schema.
+create image repository,create-image-repository,https://docs.snowflake.com/en/sql-reference/sql/create-image-repository,ddl,ddl,Creates a new image repository in the current schema.
+create index,create-index,https://docs.snowflake.com/en/sql-reference/sql/create-index,ddl,ddl,Creates a new secondary index in an existing hybrid table and populates the index with data.
+create integration,create-integration,https://docs.snowflake.com/en/sql-reference/sql/create-integration,ddl,ddl,Creates a new integration in the system or replaces an existing integration.
+create join policy,create-join-policy,https://docs.snowflake.com/en/sql-reference/sql/create-join-policy,ddl,ddl,Creates a new join policy in the current/specified schema or replaces an existing join policy.
+create listing,create-listing,https://docs.snowflake.com/en/sql-reference/sql/create-listing,ddl,ddl,"Create a free listing to share directly with specific consumers, with an inline YAML manifest, or from a file located in a stage location."
+create managed account,create-managed-account,https://docs.snowflake.com/en/sql-reference/sql/create-managed-account,ddl,ddl,Creates a new managed account.
+create masking policy,create-masking-policy,https://docs.snowflake.com/en/sql-reference/sql/create-masking-policy,ddl,ddl,Creates a new masking policy in the current/specified schema or replaces an existing masking policy.
+create materialized view,create-materialized-view,https://docs.snowflake.com/en/sql-reference/sql/create-materialized-view,ddl,ddl,"Creates a new materialized view in the current/specified schema, based on a query of an existing table, and populates the view with data."
+create model,create-model,https://docs.snowflake.com/en/sql-reference/sql/create-model,ddl,ddl,Creates a new machine learning model in the current/specified schema or replaces an existing model.
+create model monitor,create-model-monitor,https://docs.snowflake.com/en/sql-reference/sql/create-model-monitor,ddl,ddl,Create or replace a model monitor in the current or specified schema.
+create network policy,create-network-policy,https://docs.snowflake.com/en/sql-reference/sql/create-network-policy,ddl,ddl,Creates a network policy or replaces an existing network policy.
+create network rule,create-network-rule,https://docs.snowflake.com/en/sql-reference/sql/create-network-rule,ddl,ddl,Creates a network rule or replaces an existing network rule.
+create notebook,create-notebook,https://docs.snowflake.com/en/sql-reference/sql/create-notebook,ddl,ddl,Creates a new Snowflake notebook or replaces an existing notebook.
+create notification integration,create-notification-integration,https://docs.snowflake.com/en/sql-reference/sql/create-notification-integration,ddl,ddl,Creates a new notification integration in the account or replaces an existing integration.
+create or alter,create-or-alter,https://docs.snowflake.com/en/sql-reference/sql/create-or-alter,ddl,ddl,"CREATE OR ALTER commands are DDL commands that combine the functionality of the CREATE command and the ALTER command, enabling you to define an object using the syntax supported by the CREATE command with the limitations of the ALTER command."
+create organization account,create-organization-account,https://docs.snowflake.com/en/sql-reference/sql/create-organization-account,ddl,ddl,Creates a new organization account.
+create organization listing,create-organization-listing,https://docs.snowflake.com/en/sql-reference/sql/create-organization-listing,ddl,ddl,Create an organization listing to share data products securely within your organization.
+create organization profile,create-organization-profile,https://docs.snowflake.com/en/sql-reference/sql/create-organization-profile,ddl,ddl,Create the organization profile that forms part of the Uniform Listing Locator (ULL) used to publish organizational listings or query organizational listing information without mounting the listing.
+create packages policy,create-packages-policy,https://docs.snowflake.com/en/sql-reference/sql/create-packages-policy,ddl,ddl,Creates a new packages policy or replaces an existing packages policy.
+create password policy,create-password-policy,https://docs.snowflake.com/en/sql-reference/sql/create-password-policy,ddl,ddl,Creates a new password policy or replaces an existing password policy.
+create pipe,create-pipe,https://docs.snowflake.com/en/sql-reference/sql/create-pipe,ddl,ddl,Creates a new pipe in the system for defining the COPY INTO <table> statement used by Snowpipe to load data from an ingestion queue into tables.
+create privacy policy,create-privacy-policy,https://docs.snowflake.com/en/sql-reference/sql/create-privacy-policy,ddl,ddl,Creates a new privacy policy or replaces an existing privacy policy.
+create procedure,create-procedure,https://docs.snowflake.com/en/sql-reference/sql/create-procedure,ddl,ddl,Creates a new stored procedure.
+create projection policy,create-projection-policy,https://docs.snowflake.com/en/sql-reference/sql/create-projection-policy,ddl,ddl,Creates a new projection policy in the current/specified schema or replaces an existing projection policy.
+create provisioned throughput,create-provisioned-throughput,https://docs.snowflake.com/en/sql-reference/sql/create-provisioned-throughput,ddl,ddl,Creates a new Provisioned Throughput resource or replaces an existing one.
+create replication group,create-replication-group,https://docs.snowflake.com/en/sql-reference/sql/create-replication-group,ddl,ddl,Creates a new replication group of specified objects in the system.
+create resource monitor,create-resource-monitor,https://docs.snowflake.com/en/sql-reference/sql/create-resource-monitor,ddl,ddl,Creates a new resource monitor.
+create role,create-role,https://docs.snowflake.com/en/sql-reference/sql/create-role,ddl,ddl,Create a new role or replace an existing role in the system.
+create row access policy,create-row-access-policy,https://docs.snowflake.com/en/sql-reference/sql/create-row-access-policy,ddl,ddl,Creates a new row access policy in the current/specified schema or replaces an existing row access policy.
+create schema,create-schema,https://docs.snowflake.com/en/sql-reference/sql/create-schema,ddl,ddl,Creates a new schema in the current database.
+create secret,create-secret,https://docs.snowflake.com/en/sql-reference/sql/create-secret,ddl,ddl,Creates a new secret in the current or specified schema or replaces an existing secret.
+create security integration,create-security-integration,https://docs.snowflake.com/en/sql-reference/sql/create-security-integration,ddl,ddl,Creates a new security integration in the account or replaces an existing integration.
+create semantic view,create-semantic-view,https://docs.snowflake.com/en/sql-reference/sql/create-semantic-view,ddl,ddl,Creates a new semantic view in the current/specified schema.
+create sequence,create-sequence,https://docs.snowflake.com/en/sql-reference/sql/create-sequence,ddl,ddl,"Creates a new sequence, which can be used for generating sequential, unique numbers."
+create service,create-service,https://docs.snowflake.com/en/sql-reference/sql/create-service,ddl,ddl,Creates a new Snowpark Container Services service in the current schema.
+create session policy,create-session-policy,https://docs.snowflake.com/en/sql-reference/sql/create-session-policy,ddl,ddl,Creates a new session policy or replaces an existing session policy.
+create share,create-share,https://docs.snowflake.com/en/sql-reference/sql/create-share,ddl,ddl,"Creates a new, empty share."
+create snapshot,create-snapshot,https://docs.snowflake.com/en/sql-reference/sql/create-snapshot,ddl,ddl,Creates or replaces a snapshot of a named volume from the specified service instance.
+create stage,create-stage,https://docs.snowflake.com/en/sql-reference/sql/create-stage,ddl,ddl,Creates a new named internal or external stage to use for loading data from files into Snowflake tables and unloading data from tables into files.
+create storage integration,create-storage-integration,https://docs.snowflake.com/en/sql-reference/sql/create-storage-integration,ddl,ddl,Creates a new storage integration in the account or replaces an existing integration.
+create stream,create-stream,https://docs.snowflake.com/en/sql-reference/sql/create-stream,ddl,ddl,Creates a new stream in the current/specified schema or replaces an existing stream.
+create streamlit,create-streamlit,https://docs.snowflake.com/en/sql-reference/sql/create-streamlit,ddl,ddl,Creates a new Streamlit application object in Snowflake or replaces an existing Streamlit application object in the same schema.
+create table,create-table,https://docs.snowflake.com/en/sql-reference/sql/create-table,ddl,ddl,"Creates a new table in the current/specified schema, replaces an existing table, or alters an existing table."
+create tag,create-tag,https://docs.snowflake.com/en/sql-reference/sql/create-tag,ddl,ddl,Creates a new tag or replaces an existing tag in the system.
+create task,create-task,https://docs.snowflake.com/en/sql-reference/sql/create-task,ddl,ddl,Creates a new task in the current/specified schema or replaces an existing task.
+create user,create-user,https://docs.snowflake.com/en/sql-reference/sql/create-user,ddl,ddl,Creates a new user or replaces an existing user in the system.
+create or alter versioned schema,create-versioned-schema,https://docs.snowflake.com/en/sql-reference/sql/create-versioned-schema,ddl,ddl,Creates a new versioned schema or modifies an existing versioned schema.
+create view,create-view,https://docs.snowflake.com/en/sql-reference/sql/create-view,ddl,ddl,"Creates a new view in the current/specified schema, based on a query of one or more existing tables (or any other valid query expression)."
+create warehouse,create-warehouse,https://docs.snowflake.com/en/sql-reference/sql/create-warehouse,ddl,ddl,Creates a new virtual warehouse in the system.
+delete,delete,https://docs.snowflake.com/en/sql-reference/sql/delete,dml,dml,Remove rows from a table.
+describe,desc,https://docs.snowflake.com/en/sql-reference/sql/desc,ddl,ddl,Describes the details for the specified object.
+describe aggregation policy,desc-aggregation-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-aggregation-policy,ddl,ddl,"Describes the details about an aggregation policy, including the creation date, name, and the SQL expression."
+describe alert,desc-alert,https://docs.snowflake.com/en/sql-reference/sql/desc-alert,ddl,ddl,Describes the properties of an alert.
+describe application,desc-application,https://docs.snowflake.com/en/sql-reference/sql/desc-application,ddl,ddl,Displays information about a
+describe authentication policy,desc-authentication-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-authentication-policy,ddl,ddl,Describes the properties of an authentication policy.
+describe available listing,desc-available-listing,https://docs.snowflake.com/en/sql-reference/sql/desc-available-listing,ddl,ddl,Describes the columns in the listings that are available to the user who runs the command.
+describe available organization profile,desc-available-organization-profile,https://docs.snowflake.com/en/sql-reference/sql/desc-available-organization-profile,ddl,ddl,Describes the active organization profile that can be associated with organizational listings.
+describe catalog integration,desc-catalog-integration,https://docs.snowflake.com/en/sql-reference/sql/desc-catalog-integration,ddl,ddl,Describes the properties of a catalog integration.
+describe compute pool,desc-compute-pool,https://docs.snowflake.com/en/sql-reference/sql/desc-compute-pool,ddl,ddl,Describes the properties of a compute pool.
+describe cortex search service,desc-cortex-search,https://docs.snowflake.com/en/sql-reference/sql/desc-cortex-search,ddl,ddl,Describes the properties of a Cortex Search service.
+describe database,desc-database,https://docs.snowflake.com/en/sql-reference/sql/desc-database,ddl,ddl,Describes the database.
+describe dynamic table,desc-dynamic-table,https://docs.snowflake.com/en/sql-reference/sql/desc-dynamic-table,ddl,ddl,Describes the columns in a dynamic table.
+describe event table,desc-event-table,https://docs.snowflake.com/en/sql-reference/sql/desc-event-table,ddl,ddl,Describes the columns in an event table.
+describe external table,desc-external-table,https://docs.snowflake.com/en/sql-reference/sql/desc-external-table,ddl,ddl,Describes the VALUE column and virtual columns in an external table.
+describe external volume,desc-external-volume,https://docs.snowflake.com/en/sql-reference/sql/desc-external-volume,ddl,ddl,Describes the properties of an external volume.
+describe file format,desc-file-format,https://docs.snowflake.com/en/sql-reference/sql/desc-file-format,ddl,ddl,"Describes the property type (for example, String or Integer), the defined value of the property, and the default value for each property in a file format object definition."
+describe function,desc-function,https://docs.snowflake.com/en/sql-reference/sql/desc-function,ddl,ddl,"Describes the specified user-defined function (UDF) or external function, including the signature (i.e. arguments), return value, language, and body (i.e. definition)."
+describe git repository,desc-git-repository,https://docs.snowflake.com/en/sql-reference/sql/desc-git-repository,ddl,ddl,Describes an existing Git repository stage.
+describe iceberg table,desc-iceberg-table,https://docs.snowflake.com/en/sql-reference/sql/desc-iceberg-table,ddl,ddl,"Describes either the columns in an Apache Iceberg™ table or the current values, as well as the default values, for the properties of an Iceberg table."
+describe integration,desc-integration,https://docs.snowflake.com/en/sql-reference/sql/desc-integration,ddl,ddl,Describes the properties of an integration.
+describe join policy,desc-join-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-join-policy,ddl,ddl,"Describes the details about a join policy, including the creation date, name, and the SQL expression."
+describe listing,desc-listing,https://docs.snowflake.com/en/sql-reference/sql/desc-listing,ddl,ddl,Describes the columns in a listing.
+describe masking policy,desc-masking-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-masking-policy,ddl,ddl,"Describes the details about a masking policy, including the creation date, name, data type, and SQL expression."
+describe materialized view,desc-materialized-view,https://docs.snowflake.com/en/sql-reference/sql/desc-materialized-view,ddl,ddl,Describes the columns in a materialized view.
+describe model monitor,desc-model-monitor,https://docs.snowflake.com/en/sql-reference/sql/desc-model-monitor,ddl,ddl,Displays information about a specific model monitor.
+describe network policy,desc-network-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-network-policy,ddl,ddl,Describes the properties specified for a network policy.
+describe network rule,desc-network-rule,https://docs.snowflake.com/en/sql-reference/sql/desc-network-rule,ddl,ddl,Describes the properties specified for a network rule.
+describe notebook,desc-notebook,https://docs.snowflake.com/en/sql-reference/sql/desc-notebook,ddl,ddl,Describes the properties of a notebook.
+describe notification integration,desc-notification-integration,https://docs.snowflake.com/en/sql-reference/sql/desc-notification-integration,ddl,ddl,Describes the properties of a notification integration.
+describe organization profile,desc-organization-profile,https://docs.snowflake.com/en/sql-reference/sql/desc-organization-profile,ddl,ddl,Describes the properties of an organization profile.
+describe packages policy,desc-packages-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-packages-policy,ddl,ddl,Describes the details about a packages policy.
+describe password policy,desc-password-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-password-policy,ddl,ddl,Describes the details about a password policy.
+describe pipe,desc-pipe,https://docs.snowflake.com/en/sql-reference/sql/desc-pipe,ddl,ddl,"Describes the properties specified for a pipe, as well as the default values of the properties."
+describe privacy policy,desc-privacy-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-privacy-policy,ddl,ddl,Describes the properties of a privacy policy.
+describe procedure,desc-procedure,https://docs.snowflake.com/en/sql-reference/sql/desc-procedure,ddl,ddl,"Describes the specified stored procedure, including the stored procedure’s signature (i.e. arguments), return value, language, and body (i.e. definition)."
+describe projection policy,desc-projection-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-projection-policy,ddl,ddl,"Describes the details about a projection policy, including the creation date, name, and the SQL expression."
+describe result,desc-result,https://docs.snowflake.com/en/sql-reference/sql/desc-result,ddl,ddl,Describes the columns in the result of a query.
+describe row access policy,desc-row-access-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-row-access-policy,ddl,ddl,"Describes a row access policy, including the creation date, name, data type, and SQL expression."
+describe schema,desc-schema,https://docs.snowflake.com/en/sql-reference/sql/desc-schema,ddl,ddl,Describes the schema.
+describe search optimization,desc-search-optimization,https://docs.snowflake.com/en/sql-reference/sql/desc-search-optimization,ddl,ddl,Describes the search optimization configuration for a specified table and its columns.
+describe secret,desc-secret,https://docs.snowflake.com/en/sql-reference/sql/desc-secret,ddl,ddl,Describes the properties of a secret.
+describe semantic view,desc-semantic-view,https://docs.snowflake.com/en/sql-reference/sql/desc-semantic-view,ddl,ddl,"Describes the properties of the logical tables, dimensions, facts, and metrics that make up a semantic view."
+describe sequence,desc-sequence,https://docs.snowflake.com/en/sql-reference/sql/desc-sequence,ddl,ddl,"Describes a sequence, including the sequence’s interval."
+describe service,desc-service,https://docs.snowflake.com/en/sql-reference/sql/desc-service,ddl,ddl,Describes the properties of a Snowpark Container Services service (including job services).
+describe session policy,desc-session-policy,https://docs.snowflake.com/en/sql-reference/sql/desc-session-policy,ddl,ddl,Describes the details about a session policy.
+describe share,desc-share,https://docs.snowflake.com/en/sql-reference/sql/desc-share,ddl,ddl,Describes the data objects that are included in a share.
+describe snapshot,desc-snapshot,https://docs.snowflake.com/en/sql-reference/sql/desc-snapshot,ddl,ddl,Describes the properties of a snapshot.
+describe stage,desc-stage,https://docs.snowflake.com/en/sql-reference/sql/desc-stage,ddl,ddl,"Describes the values specified for the properties in a stage (file format, copy, and location), as well as the default values for each property."
+describe stream,desc-stream,https://docs.snowflake.com/en/sql-reference/sql/desc-stream,ddl,ddl,Describes the properties specified for a stream.
+describe streamlit,desc-streamlit,https://docs.snowflake.com/en/sql-reference/sql/desc-streamlit,ddl,ddl,Describes the columns in a Streamlit object.
+describe table,desc-table,https://docs.snowflake.com/en/sql-reference/sql/desc-table,ddl,ddl,Describes either the columns in a table or the set of stage properties for the table (current values and default values).
+describe task,desc-task,https://docs.snowflake.com/en/sql-reference/sql/desc-task,ddl,ddl,Describes the columns in a task.
+describe transaction,desc-transaction,https://docs.snowflake.com/en/sql-reference/sql/desc-transaction,ddl,ddl,"Describes the transaction, including the start time and the state (running, committed, rolled back)."
+describe user,desc-user,https://docs.snowflake.com/en/sql-reference/sql/desc-user,ddl,ddl,"Describes a user, including the current values for the user’s properties, as well as the default values."
+describe view,desc-view,https://docs.snowflake.com/en/sql-reference/sql/desc-view,ddl,ddl,Describes the columns in a view (or table).
+describe warehouse,desc-warehouse,https://docs.snowflake.com/en/sql-reference/sql/desc-warehouse,ddl,ddl,Describes a virtual warehouse.
+drop,drop,https://docs.snowflake.com/en/sql-reference/sql/drop,ddl,ddl,Removes the specified object from the system.
+drop account,drop-account,https://docs.snowflake.com/en/sql-reference/sql/drop-account,ddl,ddl,"Drops an account, which initiates the process of deleting the account."
+drop aggregation policy,drop-aggregation-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-aggregation-policy,ddl,ddl,Removes an aggregation policy from the current/specified schema.
+drop alert,drop-alert,https://docs.snowflake.com/en/sql-reference/sql/drop-alert,ddl,ddl,Drops an existing alert.
+drop application,drop-application,https://docs.snowflake.com/en/sql-reference/sql/drop-application,ddl,ddl,Removes an application from the system in the Native Apps Framework.
+drop application package,drop-application-package,https://docs.snowflake.com/en/sql-reference/sql/drop-application-package,ddl,ddl,Removes an application package from the system in the Native Apps Framework.
+drop application role,drop-application-role,https://docs.snowflake.com/en/sql-reference/sql/drop-application-role,ddl,ddl,Removes the specified application role from the system.
+drop authentication policy,drop-authentication-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-authentication-policy,ddl,ddl,Removes an authentication policy from the system.
+drop catalog integration,drop-catalog-integration,https://docs.snowflake.com/en/sql-reference/sql/drop-catalog-integration,ddl,ddl,Removes a catalog integration from the account.
+drop compute pool,drop-compute-pool,https://docs.snowflake.com/en/sql-reference/sql/drop-compute-pool,ddl,ddl,Removes the specified compute pool from the account.
+drop connection,drop-connection,https://docs.snowflake.com/en/sql-reference/sql/drop-connection,ddl,ddl,Removes a connection from the account.
+drop cortex search service,drop-cortex-search,https://docs.snowflake.com/en/sql-reference/sql/drop-cortex-search,ddl,ddl,Removes the specified Cortex Search service from the current schema.
+drop database,drop-database,https://docs.snowflake.com/en/sql-reference/sql/drop-database,ddl,ddl,Removes a database from the system.
+drop database role,drop-database-role,https://docs.snowflake.com/en/sql-reference/sql/drop-database-role,ddl,ddl,Removes the specified database role from the system.
+drop dynamic table,drop-dynamic-table,https://docs.snowflake.com/en/sql-reference/sql/drop-dynamic-table,ddl,ddl,Removes a dynamic table from the current/specified schema.
+drop external table,drop-external-table,https://docs.snowflake.com/en/sql-reference/sql/drop-external-table,ddl,ddl,Removes an external table from the current/specified schema.
+drop external volume,drop-external-volume,https://docs.snowflake.com/en/sql-reference/sql/drop-external-volume,ddl,ddl,"Removes an external volume from the account, but retains a version of the external volume so that it can be recovered using UNDROP EXTERNAL VOLUME."
+drop failover group,drop-failover-group,https://docs.snowflake.com/en/sql-reference/sql/drop-failover-group,ddl,ddl,Removes a failover group from the account.
+drop file format,drop-file-format,https://docs.snowflake.com/en/sql-reference/sql/drop-file-format,ddl,ddl,Removes the specified file format from the current/specified schema.
+drop function,drop-function,https://docs.snowflake.com/en/sql-reference/sql/drop-function,ddl,ddl,Removes the specified user-defined function (UDF) or external function from the current/specified schema.
+drop git repository,drop-git-repository,https://docs.snowflake.com/en/sql-reference/sql/drop-git-repository,ddl,ddl,Removes the specified Git repository stage from the current/specified schema.
+drop iceberg table,drop-iceberg-table,https://docs.snowflake.com/en/sql-reference/sql/drop-iceberg-table,ddl,ddl,"Removes an Apache Iceberg™ table from the current/specified schema, but retains a version of the Iceberg table so that it can be recovered using UNDROP ICEBERG TABLE."
+drop image repository,drop-image-repository,https://docs.snowflake.com/en/sql-reference/sql/drop-image-repository,ddl,ddl,Removes the specified image repository from the current or specified schema.
+drop index,drop-index,https://docs.snowflake.com/en/sql-reference/sql/drop-index,ddl,ddl,Drops a secondary index.
+drop integration,drop-integration,https://docs.snowflake.com/en/sql-reference/sql/drop-integration,ddl,ddl,Removes an integration from the account.
+drop join policy,drop-join-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-join-policy,ddl,ddl,Removes a join policy from the current/specified schema.
+drop listing,drop-listing,https://docs.snowflake.com/en/sql-reference/sql/drop-listing,ddl,ddl,Removes the specified listing from the system and immediately revokes access for all consumers.
+drop managed account,drop-managed-account,https://docs.snowflake.com/en/sql-reference/sql/drop-managed-account,ddl,ddl,"Removes a managed account, including all objects created in the account, and immediately restricts access to the account."
+drop masking policy,drop-masking-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-masking-policy,ddl,ddl,Removes a masking policy from the system.
+drop materialized view,drop-materialized-view,https://docs.snowflake.com/en/sql-reference/sql/drop-materialized-view,ddl,ddl,Removes the specified materialized view from the current/specified schema.
+drop model,drop-model,https://docs.snowflake.com/en/sql-reference/sql/drop-model,ddl,ddl,Removes a machine learning model from the current/specified schema.
+drop model monitor,drop-model-monitor,https://docs.snowflake.com/en/sql-reference/sql/drop-model-monitor,ddl,ddl,Removes the specified model monitor from the current or specified schema.
+drop network policy,drop-network-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-network-policy,ddl,ddl,Removes the specified network policy from the system.
+drop network rule,drop-network-rule,https://docs.snowflake.com/en/sql-reference/sql/drop-network-rule,ddl,ddl,Removes the specified network rule from the system.
+drop notebook,drop-notebook,https://docs.snowflake.com/en/sql-reference/sql/drop-notebook,ddl,ddl,"Removes the specified notebook from the current/specified schema, but retains a version of the notebook so that it can be recovered using UNDROP NOTEBOOK."
+drop organization profile,drop-organization-profile,https://docs.snowflake.com/en/sql-reference/sql/drop-organization-profile,ddl,ddl,Removes an organization profile.
+drop packages policy,drop-packages-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-packages-policy,ddl,ddl,Removes a packages policy from the system.
+drop password policy,drop-password-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-password-policy,ddl,ddl,Removes a password policy from the system.
+drop pipe,drop-pipe,https://docs.snowflake.com/en/sql-reference/sql/drop-pipe,ddl,ddl,Removes the specified pipe from the current/specified schema.
+drop privacy policy,drop-privacy-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-privacy-policy,ddl,ddl,Removes the specified privacy policy from the current/specified schema.
+drop procedure,drop-procedure,https://docs.snowflake.com/en/sql-reference/sql/drop-procedure,ddl,ddl,Removes the specified stored procedure from the current/specified schema.
+drop projection policy,drop-projection-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-projection-policy,ddl,ddl,Removes a projection policy from the current/specified schema.
+drop replication group,drop-replication-group,https://docs.snowflake.com/en/sql-reference/sql/drop-replication-group,ddl,ddl,Removes a replication group from the account.
+drop resource monitor,drop-resource-monitor,https://docs.snowflake.com/en/sql-reference/sql/drop-resource-monitor,ddl,ddl,Removes the specified resource monitor from the system.
+drop role,drop-role,https://docs.snowflake.com/en/sql-reference/sql/drop-role,ddl,ddl,Removes the specified role from the system.
+drop row access policy,drop-row-access-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-row-access-policy,ddl,ddl,Removes a row access policy from the system.
+drop schema,drop-schema,https://docs.snowflake.com/en/sql-reference/sql/drop-schema,ddl,ddl,Removes a schema from the current/specified database.
+drop secret,drop-secret,https://docs.snowflake.com/en/sql-reference/sql/drop-secret,ddl,ddl,Removes a secret from the system.
+drop semantic view,drop-semantic-view,https://docs.snowflake.com/en/sql-reference/sql/drop-semantic-view,ddl,ddl,Removes the specified semantic view from the current/specified schema.
+drop sequence,drop-sequence,https://docs.snowflake.com/en/sql-reference/sql/drop-sequence,ddl,ddl,Removes a sequence from the current/specified schema.
+drop service,drop-service,https://docs.snowflake.com/en/sql-reference/sql/drop-service,ddl,ddl,Removes the specified Snowpark Container Services service from the current or specified schema.
+drop session policy,drop-session-policy,https://docs.snowflake.com/en/sql-reference/sql/drop-session-policy,ddl,ddl,Removes a session policy from the system.
+drop share,drop-share,https://docs.snowflake.com/en/sql-reference/sql/drop-share,ddl,ddl,Removes the specified share from the system and immediately revokes access for all consumers (i.e. accounts who have created a database from the share).
+drop snapshot,drop-snapshot,https://docs.snowflake.com/en/sql-reference/sql/drop-snapshot,ddl,ddl,Removes a snapshot.
+drop stage,drop-stage,https://docs.snowflake.com/en/sql-reference/sql/drop-stage,ddl,ddl,Removes the specified named internal or external stage from the current/specified schema.
+drop stream,drop-stream,https://docs.snowflake.com/en/sql-reference/sql/drop-stream,ddl,ddl,Removes a stream from the current/specified schema.
+drop streamlit,drop-streamlit,https://docs.snowflake.com/en/sql-reference/sql/drop-streamlit,ddl,ddl,Removes the specified Streamlit object from the current/specified schema.
+drop table,drop-table,https://docs.snowflake.com/en/sql-reference/sql/drop-table,ddl,ddl,"Removes a table from the current/specified schema, but retains a version of the table so that it can be recovered using UNDROP TABLE."
+drop tag,drop-tag,https://docs.snowflake.com/en/sql-reference/sql/drop-tag,ddl,ddl,Removes a tag from the system.
+drop task,drop-task,https://docs.snowflake.com/en/sql-reference/sql/drop-task,ddl,ddl,Removes a task from the current/specified schema.
+drop user,drop-user,https://docs.snowflake.com/en/sql-reference/sql/drop-user,ddl,ddl,Removes the specified user from the system.
+drop view,drop-view,https://docs.snowflake.com/en/sql-reference/sql/drop-view,ddl,ddl,Removes the specified view from the current/specified schema.
+drop warehouse,drop-warehouse,https://docs.snowflake.com/en/sql-reference/sql/drop-warehouse,ddl,ddl,Removes the specified virtual warehouse from the system.
+execute alert,execute-alert,https://docs.snowflake.com/en/sql-reference/sql/execute-alert,ddl,ddl,Manually executes an alert independent of the schedule for the alert.
+execute immediate,execute-immediate,https://docs.snowflake.com/en/sql-reference/sql/execute-immediate,ddl,ddl,Executes a string that contains a SQL statement or a Snowflake Scripting statement.
+execute immediate from,execute-immediate-from,https://docs.snowflake.com/en/sql-reference/sql/execute-immediate-from,ddl,ddl,EXECUTE IMMEDIATE FROM executes the SQL statements specified in a file in a stage.
+execute job service,execute-job-service,https://docs.snowflake.com/en/sql-reference/sql/execute-job-service,ddl,ddl,Executes a Snowpark Container Services service as a job.
+execute notebook,execute-notebook,https://docs.snowflake.com/en/sql-reference/sql/execute-notebook,ddl,ddl,Executes all the cells in the live version of a notebook.
+execute task,execute-task,https://docs.snowflake.com/en/sql-reference/sql/execute-task,ddl,ddl,Manually triggers an asynchronous single run of a task (either a standalone task or the root task in a task graph) independent of the schedule defined for the task.
+explain,explain,https://docs.snowflake.com/en/sql-reference/sql/explain,ddl,ddl,Returns the logical execution plan for the specified SQL statement.
+get,get,https://docs.snowflake.com/en/sql-reference/sql/get,ddl,ddl,Downloads data files from one of the following internal stage types to a local directory or folder on a client machine.
+grant application role,grant-application-role,https://docs.snowflake.com/en/sql-reference/sql/grant-application-role,ddl,ddl,Assigns an application role to an account role or another application role.
+grant caller,grant-caller,https://docs.snowflake.com/en/sql-reference/sql/grant-caller,ddl,ddl,Grants caller grants to a role.
+grant database role,grant-database-role,https://docs.snowflake.com/en/sql-reference/sql/grant-database-role,ddl,ddl,Assigns a database role to an account role or another database role.
+grant ownership,grant-ownership,https://docs.snowflake.com/en/sql-reference/sql/grant-ownership,ddl,ddl,Transfers ownership of an object or all objects of a specified type in a schema from one role to another role.
+grant,grant-privilege,https://docs.snowflake.com/en/sql-reference/sql/grant-privilege,ddl,ddl,Grants one or more access privileges on a securable object to a role or database role.
+grant role,grant-role,https://docs.snowflake.com/en/sql-reference/sql/grant-role,ddl,ddl,Assigns a role to a user or another role.
+grant service role,grant-service-role,https://docs.snowflake.com/en/sql-reference/sql/grant-service-role,ddl,ddl,"Assigns a service role to an account role, application role, or database role."
+insert,insert,https://docs.snowflake.com/en/sql-reference/sql/insert,dml,dml,Updates a table by inserting one or more rows into the table.
+list,list,https://docs.snowflake.com/en/sql-reference/sql/list,ddl,ddl,Returns a list of files that have been staged (files that have been uploaded from a local file system or unloaded from a table) in one of the following Snowflake stages.
+merge,merge,https://docs.snowflake.com/en/sql-reference/sql/merge,dml,dml,"Inserts, updates, and deletes values in a table based on values in a second table or a subquery."
+put,put,https://docs.snowflake.com/en/sql-reference/sql/put,ddl,ddl,Uploads one or more data files from a local file system onto an internal stage.
+remove,remove,https://docs.snowflake.com/en/sql-reference/sql/remove,ddl,ddl,Removes files from either an external (external cloud storage) or internal (i.e. Snowflake) stage.
+revoke application role,revoke-application-role,https://docs.snowflake.com/en/sql-reference/sql/revoke-application-role,ddl,ddl,Revokes an application role from an account role or another application role.
+revoke caller,revoke-caller,https://docs.snowflake.com/en/sql-reference/sql/revoke-caller,ddl,ddl,Revokes privileges that were previously granted to an executable owner using a caller grant.
+revoke database role,revoke-database-role,https://docs.snowflake.com/en/sql-reference/sql/revoke-database-role,ddl,ddl,Revokes a database role from an account role or another database role.
+revoke,revoke-privilege,https://docs.snowflake.com/en/sql-reference/sql/revoke-privilege,ddl,ddl,Removes one or more privileges on a securable object from a role or database role.
+revoke <privileges> from application,revoke-privilege-application,https://docs.snowflake.com/en/sql-reference/sql/revoke-privilege-application,ddl,ddl,Revokes one or more access privileges on a securable object from an application.
+revoke <privileges> from application role,revoke-privilege-application-role,https://docs.snowflake.com/en/sql-reference/sql/revoke-privilege-application-role,ddl,ddl,Revokes one or more access privileges on a securable schema-level object from an application role.
+revoke role,revoke-role,https://docs.snowflake.com/en/sql-reference/sql/revoke-role,ddl,ddl,Removes a role from another role or a user.
+revoke service role,revoke-service-role,https://docs.snowflake.com/en/sql-reference/sql/revoke-service-role,ddl,ddl,"Revokes a service role from an account role, application role, or database role."
+rollback,rollback,https://docs.snowflake.com/en/sql-reference/sql/rollback,ddl,ddl,Rolls back an open transaction in the current session.
+select,select,https://docs.snowflake.com/en/sql-reference/sql/select,ddl,ddl,SELECT can be used as either a statement or as a clause within other statements.
+set,set,https://docs.snowflake.com/en/sql-reference/sql/set,ddl,ddl,Initializes the value of a session variable to the result of a SQL expression.
+show,show,https://docs.snowflake.com/en/sql-reference/sql/show,ddl,ddl,Lists the existing objects for the specified object type.
+show accounts,show-accounts,https://docs.snowflake.com/en/sql-reference/sql/show-accounts,ddl,ddl,"Lists all the accounts in your organization, excluding managed accounts."
+show aggregation policies,show-aggregation-policies,https://docs.snowflake.com/en/sql-reference/sql/show-aggregation-policies,ddl,ddl,"Lists information about existing aggregation policies, including the creation date, database and schema names, owner, and any available comments."
+show alerts,show-alerts,https://docs.snowflake.com/en/sql-reference/sql/show-alerts,ddl,ddl,Lists the alerts for which you have access privileges.
+show application packages,show-application-packages,https://docs.snowflake.com/en/sql-reference/sql/show-application-packages,ddl,ddl,Lists the application packages for which you have access privileges across your entire account in the Native Apps Framework.
+show application roles,show-application-roles,https://docs.snowflake.com/en/sql-reference/sql/show-application-roles,ddl,ddl,Lists the application roles in the specified app for which for which you have access privileges.
+show applications,show-applications,https://docs.snowflake.com/en/sql-reference/sql/show-applications,ddl,ddl,Lists the application objects for which you have access privileges across your entire account in the
+show authentication policies,show-authentication-policies,https://docs.snowflake.com/en/sql-reference/sql/show-authentication-policies,ddl,ddl,"Lists authentication policy information, including the creation date, database and schema names, owner, and any available comments."
+show available listings,show-available-listings,https://docs.snowflake.com/en/sql-reference/sql/show-available-listings,ddl,ddl,Lists the listings that are available to the user who runs the command.
+show available organization profiles,show-available-organization-profiles,https://docs.snowflake.com/en/sql-reference/sql/show-available-organization-profiles,ddl,ddl,Lists the organization profiles available in the user’s organization.
+show caller grants,show-caller-grants,https://docs.snowflake.com/en/sql-reference/sql/show-caller-grants,ddl,ddl,Lists the caller grants being used to implement restricted caller’s rights.
+show catalog integrations,show-catalog-integrations,https://docs.snowflake.com/en/sql-reference/sql/show-catalog-integrations,ddl,ddl,Lists the catalog integrations in your account.
+show channels,show-channels,https://docs.snowflake.com/en/sql-reference/sql/show-channels,ddl,ddl,Lists the Snowpipe Streaming channels for which you have access privileges.
+show classes,show-classes,https://docs.snowflake.com/en/sql-reference/sql/show-classes,ddl,ddl,Lists all available classes.
+show columns,show-columns,https://docs.snowflake.com/en/sql-reference/sql/show-columns,ddl,ddl,Lists the columns in the tables or views for which you have access privileges.
+show compute pools,show-compute-pools,https://docs.snowflake.com/en/sql-reference/sql/show-compute-pools,ddl,ddl,Lists the compute pools in your account for which you have access privileges.
+show connections,show-connections,https://docs.snowflake.com/en/sql-reference/sql/show-connections,ddl,ddl,Lists the connections for which you have access privileges.
+show cortex search services,show-cortex-search,https://docs.snowflake.com/en/sql-reference/sql/show-cortex-search,ddl,ddl,Lists the Cortex Search services for which you have access privileges.
+show data metric functions,show-data-metric-functions,https://docs.snowflake.com/en/sql-reference/sql/show-data-metric-functions,ddl,ddl,Lists the data metric functions (DMFs) for which you have access privileges.
+show database roles,show-database-roles,https://docs.snowflake.com/en/sql-reference/sql/show-database-roles,ddl,ddl,Lists all the database roles in the specified database.
+show databases,show-databases,https://docs.snowflake.com/en/sql-reference/sql/show-databases,ddl,ddl,"Lists the databases for which you have access privileges across your entire account, including dropped databases that are still within the Time Travel retention period and, therefore, can be undropped."
+show databases in failover group,show-databases-in-failover-group,https://docs.snowflake.com/en/sql-reference/sql/show-databases-in-failover-group,ddl,ddl,Lists databases in a failover group.
+show databases in replication group,show-databases-in-replication-group,https://docs.snowflake.com/en/sql-reference/sql/show-databases-in-replication-group,ddl,ddl,Lists databases in a replication group.
+show datasets,show-datasets,https://docs.snowflake.com/en/sql-reference/sql/show-datasets,ddl,ddl,Displays information about the datasets in your account.
+show delegated authorizations,show-delegated-authorizations,https://docs.snowflake.com/en/sql-reference/sql/show-delegated-authorizations,ddl,ddl,Lists the active delegated authorizations for which you have access privileges.
+show dynamic tables,show-dynamic-tables,https://docs.snowflake.com/en/sql-reference/sql/show-dynamic-tables,ddl,ddl,Lists the dynamic tables for which you have access privileges.
+show endpoints,show-endpoints,https://docs.snowflake.com/en/sql-reference/sql/show-endpoints,ddl,ddl,Lists the endpoints in a Snowpark Container Services service (or a job service).
+show event tables,show-event-tables,https://docs.snowflake.com/en/sql-reference/sql/show-event-tables,ddl,ddl,"Lists the event tables for which you have access privileges, including dropped tables that are still within the Time Travel retention period and, therefore, can be undropped."
+show external functions,show-external-functions,https://docs.snowflake.com/en/sql-reference/sql/show-external-functions,ddl,ddl,Lists all the external functions created for your account.
+show external tables,show-external-tables,https://docs.snowflake.com/en/sql-reference/sql/show-external-tables,ddl,ddl,Lists the external tables for which you have access privileges.
+show external volumes,show-external-volumes,https://docs.snowflake.com/en/sql-reference/sql/show-external-volumes,ddl,ddl,Lists the external volumes in your account for which you have access privileges.
+show failover groups,show-failover-groups,https://docs.snowflake.com/en/sql-reference/sql/show-failover-groups,ddl,ddl,"Lists the primary and secondary failover groups in your account, as well as the failover groups in other accounts that are associated with your account."
+show file formats,show-file-formats,https://docs.snowflake.com/en/sql-reference/sql/show-file-formats,ddl,ddl,Lists the file formats for which you have access privileges.
+show functions,show-functions,https://docs.snowflake.com/en/sql-reference/sql/show-functions,ddl,ddl,"Lists all functions that you have privileges to access, including built-in, user-defined, and external functions."
+show functions in model,show-functions-in-model,https://docs.snowflake.com/en/sql-reference/sql/show-functions-in-model,ddl,ddl,Lists functions defined in machine learning models.
+show git branches,show-git-branches,https://docs.snowflake.com/en/sql-reference/sql/show-git-branches,ddl,ddl,Lists the Git repository branches in the specified repository.
+show git repositories,show-git-repositories,https://docs.snowflake.com/en/sql-reference/sql/show-git-repositories,ddl,ddl,Lists the Git repository stages that you have privileges to access.
+show git tags,show-git-tags,https://docs.snowflake.com/en/sql-reference/sql/show-git-tags,ddl,ddl,Lists the Git repository tags in the specified Git repository.
+show global accounts,show-global-accounts,https://docs.snowflake.com/en/sql-reference/sql/show-global-accounts,ddl,ddl,Lists all the accounts in your organization that are enabled for replication and indicates the Snowflake Region in which each account is located.
+show grants,show-grants,https://docs.snowflake.com/en/sql-reference/sql/show-grants,ddl,ddl,"Lists all access control privileges that have been explicitly granted to roles, users, and shares."
+show hybrid tables,show-hybrid-tables,https://docs.snowflake.com/en/sql-reference/sql/show-hybrid-tables,ddl,ddl,Lists the hybrid tables for which you have access privileges.
+show iceberg tables,show-iceberg-tables,https://docs.snowflake.com/en/sql-reference/sql/show-iceberg-tables,ddl,ddl,Lists the Apache Iceberg™ tables for which you have access privileges.
+show image repositories,show-image-repositories,https://docs.snowflake.com/en/sql-reference/sql/show-image-repositories,ddl,ddl,Lists the image repositories for which you have access privileges.
+show images in image repository,show-images-in-image-repository,https://docs.snowflake.com/en/sql-reference/sql/show-images-in-image-repository,ddl,ddl,Lists the images in an image repository.
+show indexes,show-indexes,https://docs.snowflake.com/en/sql-reference/sql/show-indexes,ddl,ddl,Lists all the indexes in your account for which you have access privileges.
+show integrations,show-integrations,https://docs.snowflake.com/en/sql-reference/sql/show-integrations,ddl,ddl,Lists the integrations in your account.
+show join policies,show-join-policies,https://docs.snowflake.com/en/sql-reference/sql/show-join-policies,ddl,ddl,"Lists information about existing join policies, including the creation date, database and schema names, owner, and any available comments."
+show listings,show-listings,https://docs.snowflake.com/en/sql-reference/sql/show-listings,ddl,ddl,Lists the listings that you have privileges to access.
+show locks,show-locks,https://docs.snowflake.com/en/sql-reference/sql/show-locks,ddl,ddl,Lists all running transactions that have locks on resources.
+show managed accounts,show-managed-accounts,https://docs.snowflake.com/en/sql-reference/sql/show-managed-accounts,ddl,ddl,Lists the managed accounts created for your account.
+show masking policies,show-masking-policies,https://docs.snowflake.com/en/sql-reference/sql/show-masking-policies,ddl,ddl,"Lists masking policy information, including the creation date, database and schema names, owner, and any available comments."
+show materialized views,show-materialized-views,https://docs.snowflake.com/en/sql-reference/sql/show-materialized-views,ddl,ddl,Lists the materialized views that you have privileges to access.
+show model monitors,show-model-monitors,https://docs.snowflake.com/en/sql-reference/sql/show-model-monitors,ddl,ddl,Lists all model monitor that you can access in the current or specified schema and displays information about each one.
+show models,show-models,https://docs.snowflake.com/en/sql-reference/sql/show-models,ddl,ddl,Lists the machine learning models that you have privileges to access.
+show network policies,show-network-policies,https://docs.snowflake.com/en/sql-reference/sql/show-network-policies,ddl,ddl,Lists all network policies defined in the system.
+show network rules,show-network-rules,https://docs.snowflake.com/en/sql-reference/sql/show-network-rules,ddl,ddl,Lists all network rules defined in the system.
+show notebooks,show-notebooks,https://docs.snowflake.com/en/sql-reference/sql/show-notebooks,ddl,ddl,Lists the notebooks for which you have access privileges.
+show notification integrations,show-notification-integrations,https://docs.snowflake.com/en/sql-reference/sql/show-notification-integrations,ddl,ddl,Lists the notification integrations in your account.
+show objects,show-objects,https://docs.snowflake.com/en/sql-reference/sql/show-objects,ddl,ddl,Lists the tables and views for which you have access privileges.
+show organization accounts,show-organization-accounts,https://docs.snowflake.com/en/sql-reference/sql/show-organization-accounts,ddl,ddl,Lists the organization account of the organization.
+show organization profiles,show-organization-profiles,https://docs.snowflake.com/en/sql-reference/sql/show-organization-profiles,ddl,ddl,Lists the organization profiles for which you have access privileges.
+show packages policies,show-packages-policies,https://docs.snowflake.com/en/sql-reference/sql/show-packages-policies,ddl,ddl,Lists packages policy information.
+show parameters,show-parameters,https://docs.snowflake.com/en/sql-reference/sql/show-parameters,ddl,ddl,"Lists all the account, session, and object parameters that can be set, as well as the current and default values for each parameter."
+show password policies,show-password-policies,https://docs.snowflake.com/en/sql-reference/sql/show-password-policies,ddl,ddl,"Lists password policy information, including the creation date, database and schema names, owner, and any available comments."
+show pipes,show-pipes,https://docs.snowflake.com/en/sql-reference/sql/show-pipes,ddl,ddl,Lists the pipes for which you have access privileges.
+show primary keys,show-primary-keys,https://docs.snowflake.com/en/sql-reference/sql/show-primary-keys,ddl,ddl,Lists primary keys for one or more tables.
+show privacy policies,show-privacy-policies,https://docs.snowflake.com/en/sql-reference/sql/show-privacy-policies,ddl,ddl,Lists the privacy policies for which you have access privileges.
+show privileges,show-privileges,https://docs.snowflake.com/en/sql-reference/sql/show-privileges,ddl,ddl,Lists the privileges granted to an application.
+show procedures,show-procedures,https://docs.snowflake.com/en/sql-reference/sql/show-procedures,ddl,ddl,"Lists all stored procedures that you have privileges to access, including built-in and user-defined procedures."
+show projection policies,show-projection-policies,https://docs.snowflake.com/en/sql-reference/sql/show-projection-policies,ddl,ddl,"Lists projection policy information, including the creation date, database and schema names, owner, and any available comments."
+show references,show-references,https://docs.snowflake.com/en/sql-reference/sql/show-references,ddl,ddl,Lists the references defined for an application in the manifest file and the references the consumer has associated to the application.
+show regions,show-regions,https://docs.snowflake.com/en/sql-reference/sql/show-regions,ddl,ddl,Lists all the regions in which accounts can be created.
+show release directives,show-release-directives,https://docs.snowflake.com/en/sql-reference/sql/show-release-directives,ddl,ddl,Lists the release directives defined for an application package in the Native Apps Framework.
+show replication accounts,show-replication-accounts,https://docs.snowflake.com/en/sql-reference/sql/show-replication-accounts,ddl,ddl,Lists all the accounts in your organization that are enabled for replication and indicates the region in which each account is located.
+show replication databases,show-replication-databases,https://docs.snowflake.com/en/sql-reference/sql/show-replication-databases,ddl,ddl,"Lists all the primary and secondary databases (that is to say, all the databases for which replication has been enabled) in your account and indicates the region in which each account is located."
+show replication groups,show-replication-groups,https://docs.snowflake.com/en/sql-reference/sql/show-replication-groups,ddl,ddl,Displays information about replication groups and failover groups.
+show resource monitors,show-resource-monitors,https://docs.snowflake.com/en/sql-reference/sql/show-resource-monitors,ddl,ddl,Lists all the resource monitors in your account for which you have access privileges.
+show roles,show-roles,https://docs.snowflake.com/en/sql-reference/sql/show-roles,ddl,ddl,"Lists all the roles which you can view across your entire account, including the system-defined roles and any custom roles that exist."
+show roles in service,show-roles-in-service,https://docs.snowflake.com/en/sql-reference/sql/show-roles-in-service,ddl,ddl,Lists all the service roles associated with a service.
+show row access policies,show-row-access-policies,https://docs.snowflake.com/en/sql-reference/sql/show-row-access-policies,ddl,ddl,Lists the row access policies for which you have access privileges.
+show schemas,show-schemas,https://docs.snowflake.com/en/sql-reference/sql/show-schemas,ddl,ddl,"Lists the schemas for which you have access privileges, including dropped schemas that are still within the Time Travel retention period and, therefore, can be undropped."
+show secrets,show-secrets,https://docs.snowflake.com/en/sql-reference/sql/show-secrets,ddl,ddl,Lists the secrets for which you have rights to see.
+show semantic views,show-semantic-views,https://docs.snowflake.com/en/sql-reference/sql/show-semantic-views,ddl,ddl,Lists the semantic views for which you have access privileges.
+show sequences,show-sequences,https://docs.snowflake.com/en/sql-reference/sql/show-sequences,ddl,ddl,Lists all the sequences for which you have access privileges.
+show service containers in service,show-service-containers-in-service,https://docs.snowflake.com/en/sql-reference/sql/show-service-containers-in-service,ddl,ddl,Lists the containers in all instances of a service.
+show service instances in service,show-service-instances-in-service,https://docs.snowflake.com/en/sql-reference/sql/show-service-instances-in-service,ddl,ddl,Lists instances of a service.
+show services,show-services,https://docs.snowflake.com/en/sql-reference/sql/show-services,ddl,ddl,Lists the Snowpark Container Services services (including job services) for which you have access privileges.
+show session policies,show-session-policies,https://docs.snowflake.com/en/sql-reference/sql/show-session-policies,ddl,ddl,"Lists session policy information, including the creation date, database and schema names, owner, and any available comments."
+show shares,show-shares,https://docs.snowflake.com/en/sql-reference/sql/show-shares,ddl,ddl,Lists all shares available in the system.
+show shares in failover group,show-shares-in-failover-group,https://docs.snowflake.com/en/sql-reference/sql/show-shares-in-failover-group,ddl,ddl,Lists shares in a failover group.
+show shares in replication group,show-shares-in-replication-group,https://docs.snowflake.com/en/sql-reference/sql/show-shares-in-replication-group,ddl,ddl,Lists shares in a replication group.
+show snapshots,show-snapshots,https://docs.snowflake.com/en/sql-reference/sql/show-snapshots,ddl,ddl,Lists the snapshots for which you have access privileges.
+show stages,show-stages,https://docs.snowflake.com/en/sql-reference/sql/show-stages,ddl,ddl,Lists all the stages for which you have access privileges.
+show streamlits,show-streamlits,https://docs.snowflake.com/en/sql-reference/sql/show-streamlits,ddl,ddl,Lists the Streamlit objects for which you have access privileges.
+show streams,show-streams,https://docs.snowflake.com/en/sql-reference/sql/show-streams,ddl,ddl,Lists the streams for which you have access privileges.
+show tables,show-tables,https://docs.snowflake.com/en/sql-reference/sql/show-tables,ddl,ddl,"Lists the tables for which you have access privileges, including dropped tables that are still within the Time Travel retention period and, therefore, can be undropped."
+show tags,show-tags,https://docs.snowflake.com/en/sql-reference/sql/show-tags,ddl,ddl,Lists the tag information.
+show tasks,show-tasks,https://docs.snowflake.com/en/sql-reference/sql/show-tasks,ddl,ddl,Lists the tasks for which you have access privileges.
+show telemetry event definitions,show-telemetry-event-definitions,https://docs.snowflake.com/en/sql-reference/sql/show-telemetry-event-definitions,ddl,ddl,Lists the event definitions for the specified app.
+show transactions,show-transactions,https://docs.snowflake.com/en/sql-reference/sql/show-transactions,ddl,ddl,List all running transactions.
+show user functions,show-user-functions,https://docs.snowflake.com/en/sql-reference/sql/show-user-functions,ddl,ddl,Lists all user-defined functions (UDFs) for which you have access privileges.
+show user procedures,show-user-procedures,https://docs.snowflake.com/en/sql-reference/sql/show-user-procedures,ddl,ddl,Lists all user-defined procedures for which you have access privileges.
+show user programmatic access tokens,show-user-programmatic-access-tokens,https://docs.snowflake.com/en/sql-reference/sql/show-user-programmatic-access-tokens,ddl,ddl,Lists the programmatic access tokens associated with a user.
+show users,show-users,https://docs.snowflake.com/en/sql-reference/sql/show-users,ddl,ddl,Lists all users in the system.
+show variables,show-variables,https://docs.snowflake.com/en/sql-reference/sql/show-variables,ddl,ddl,Lists all variables defined in the current session.
+show versions in application package,show-versions,https://docs.snowflake.com/en/sql-reference/sql/show-versions,ddl,ddl,Lists the versions defined in the specified application package.
+show versions in dataset,show-versions-in-dataset,https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-dataset,ddl,ddl,Displays information about the datasets in your account at either the schema or database level.
+show versions in listing,show-versions-in-listing,https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-listing,ddl,ddl,Lists and provides details of all listing versions.
+show versions in model,show-versions-in-model,https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-model,ddl,ddl,Lists the versions in a machine learning model.
+show versions in organization profile,show-versions-in-organization-profile,https://docs.snowflake.com/en/sql-reference/sql/show-versions-in-organization-profile,ddl,ddl,Lists the organization profile versions for which you have access privileges.
+show views,show-views,https://docs.snowflake.com/en/sql-reference/sql/show-views,ddl,ddl,"Lists the views, including secure views, for which you have access privileges."
+show warehouses,show-warehouses,https://docs.snowflake.com/en/sql-reference/sql/show-warehouses,ddl,ddl,Lists all the virtual warehouses in your account for which you have access privileges.
+truncate materialized view,truncate-materialized-view,https://docs.snowflake.com/en/sql-reference/sql/truncate-materialized-view,ddl,ddl,"Removes all rows from a materialized view, but leaves the view intact (including all privileges and constraints on the materialized view)."
+truncate table,truncate-table,https://docs.snowflake.com/en/sql-reference/sql/truncate-table,dml,dml,Removes all rows from a table but leaves the table intact (including all privileges and constraints on the table).
+undrop,undrop,https://docs.snowflake.com/en/sql-reference/sql/undrop,ddl,ddl,Restores the specified object to the system.
+undrop account,undrop-account,https://docs.snowflake.com/en/sql-reference/sql/undrop-account,ddl,ddl,Restores a dropped account that has not yet been permanently deleted (a dropped account that is within its grace period).
+undrop database,undrop-database,https://docs.snowflake.com/en/sql-reference/sql/undrop-database,ddl,ddl,Restores the most recent version of a dropped database.
+undrop dynamic table,undrop-dynamic-table,https://docs.snowflake.com/en/sql-reference/sql/undrop-dynamic-table,ddl,ddl,Restores the most recent version of a dropped dynamic table.
+undrop external volume,undrop-external-volume,https://docs.snowflake.com/en/sql-reference/sql/undrop-external-volume,ddl,ddl,Restores the most recent version of a dropped external volume.
+undrop iceberg table,undrop-iceberg-table,https://docs.snowflake.com/en/sql-reference/sql/undrop-iceberg-table,ddl,ddl,Restores the most recent version of a dropped Apache Iceberg™ table.
+undrop notebook,undrop-notebook,https://docs.snowflake.com/en/sql-reference/sql/undrop-notebook,ddl,ddl,Restores the most recent version of a dropped notebook.
+undrop schema,undrop-schema,https://docs.snowflake.com/en/sql-reference/sql/undrop-schema,ddl,ddl,Restore the most recent version of a dropped schema.
+undrop streamlit,undrop-streamlit,https://docs.snowflake.com/en/sql-reference/sql/undrop-streamlit,ddl,ddl,Restores the most recent version of a dropped Streamlit object.
+undrop table,undrop-table,https://docs.snowflake.com/en/sql-reference/sql/undrop-table,ddl,ddl,Restores the most recent version of a dropped table.
+undrop tag,undrop-tag,https://docs.snowflake.com/en/sql-reference/sql/undrop-tag,ddl,ddl,Restores the most recent version of a tag to the system.
+unset,unset,https://docs.snowflake.com/en/sql-reference/sql/unset,ddl,ddl,Drops a session variable.
+update,update,https://docs.snowflake.com/en/sql-reference/sql/update,dml,dml,Updates specified rows in the target table with new values.
+use,use,https://docs.snowflake.com/en/sql-reference/sql/use,ddl,ddl,"Specifies the role, warehouse, database, or schema to use for the current session."
+use database,use-database,https://docs.snowflake.com/en/sql-reference/sql/use-database,ddl,ddl,Specifies the active/current database for the session.
+use role,use-role,https://docs.snowflake.com/en/sql-reference/sql/use-role,ddl,ddl,Specifies the active/current primary role for the session.
+use schema,use-schema,https://docs.snowflake.com/en/sql-reference/sql/use-schema,ddl,ddl,Specifies the active/current schema for the session.
+use secondary roles,use-secondary-roles,https://docs.snowflake.com/en/sql-reference/sql/use-secondary-roles,ddl,ddl,Specifies the active/current secondary roles for the session.
+use warehouse,use-warehouse,https://docs.snowflake.com/en/sql-reference/sql/use-warehouse,ddl,ddl,Specifies the active/current virtual warehouse for the session.
+truncate,truncate-table,https://docs.snowflake.com/en/sql-reference/sql/truncate-table,dml,dml,Removes all rows from a table but leaves the table intact (including all privileges and constraints on the table).
+create or replace,create-table,https://docs.snowflake.com/en/sql-reference/sql/create-table,ddl,ddl,"Creates a new table in the current/specified schema, replaces an existing table, or alters an existing table."
