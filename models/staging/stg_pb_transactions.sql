@@ -10,7 +10,8 @@ with mazuria_pb_raw_transactions as (
 final as (
 
 	select 
-        (data::json->>'ID')::bigint as transaction_id,
+        (data::json->>'ID')::varchar as transaction_id,
+        --(data::json->>'ID')::bigint as transaction_id,
         TO_DATE(data::json->>'DAT_KL', 'DD.MM.YYYY') as transaction_date,
         TO_TIMESTAMP(data::json->>'DATE_TIME_DAT_OD_TIM_P', 'DD.MM.YYYY HH24:MI') AS transaction_timestamp,
         data::json->>'CCY' as currency,
