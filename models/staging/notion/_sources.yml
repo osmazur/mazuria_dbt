@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: notion
+    database: mazuria
+    schema: mazuria_raw
+
+    tables:
+      - name: teacher
+      - name: teacher__properties__name__title
+      - name: teacher__properties__birthday__rich_text
+      - name: teacher__properties__type__multi_select
+
+      - name: student
+      - name: student__properties__name__title
+      - name: student__properties__note__rich_text
+
+      - name: dict_course
+      - name: dict_course__properties__name__title
+
+      - name: dict_group
+      - name: dict_group__properties__name__title
+      - name: dict_group__properties__days__rich_text
+      - name: dict_group__properties__hours__rich_text
+
+      - name: attendance
+      - name: attendance__properties__student_name__rich_text
+      - name: attendance__properties__student_phone__rich_text
+      - name: attendance__properties__teacher__rich_text
+      - name: attendance__properties__course__rich_text
+      - name: attendance__properties__group__rich_text
+      - name: attendance__properties__payment__rich_text

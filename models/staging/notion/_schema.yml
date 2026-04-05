@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: stg_notion__teachers
+    columns:
+      - name: teacher_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_notion__students
+    columns:
+      - name: student_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_notion__dict_courses
+    columns:
+      - name: course_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_notion__dict_groups
+    columns:
+      - name: group_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_notion__attendances
+    columns:
+      - name: attendance_id
+        tests:
+          - unique
+          - not_null
+      - name: attendance_date
+        tests:
+          - not_null
