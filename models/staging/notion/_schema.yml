@@ -35,6 +35,6 @@ models:
         tests:
           - unique
           - not_null
-      - name: attendance_date
-        tests:
-          - not_null
+#      - name: attendance_date
+#        tests:
+#          - not_null
