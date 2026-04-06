@@ -20,8 +20,8 @@ final as (
         birthday,
         employment_type,
         mazuria_email as teacher_mazuria_email,
-        valid_from,
-        valid_to,
+        nullif(valid_from, '')::date as valid_from,
+        nullif(valid_to, '')::date as valid_to,
         hrate::int,
         defrate::int,
         fullrate::int
