@@ -59,7 +59,7 @@ total_hours as (
         on t.teacher_mazuria_email = tc.teacher_mazuria_email
         and tc.month_end_date >= t.teacher_end_month
         and (t.valid_from is null or tc.month_end_date >= t.valid_from::date)
-        and (t.valid_to is null or tc.month_end_date < t.valid_to::date)
+        and (t.valid_to is null or tc.month_end_date <= t.valid_to::date)
         and (t.teacher_end_date is null or tc.month_end_date <= (date_trunc('month', t.teacher_end_date) + interval '1 month - 1 day')::date)
 )
 
