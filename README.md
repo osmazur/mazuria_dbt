@@ -6,7 +6,7 @@ Welcome to Mazuria dbt project!
 
 Mazuria Data Platform v5.0 Production extended and this is *current state*
 ![alt text](images/mdp_5.png)
-- configured tailscale to have secure connection between vm's and to vm's
+- configured tailscale to support secure connection between vm's and to vm's
 - added data from instagram and notion
 - used DLT for the exctract and load of the new data sources
 
