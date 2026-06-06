@@ -30,3 +30,12 @@ sources:
       - name: attendance__properties__course__rich_text
       - name: attendance__properties__group__rich_text
       - name: attendance__properties__payment__rich_text
+
+      - name: group
+        identifier: group
+      - name: group__properties__student__relation
+      - name: group__properties__course__relation
+      - name: group__properties__group__relation
+      - name: group__properties__teacher__relation
+      - name: group__properties__note__title
+      - name: group__properties__payment__rich_text

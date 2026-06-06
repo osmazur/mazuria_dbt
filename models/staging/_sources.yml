@@ -14,3 +14,6 @@ sources:
       - name: mazuria_gs_raw_teachers
       - name: mazuria_pb_raw_transactions
       - name: mazuria_gs_raw_transactions_kasa
+
+
+      act_268320967333389/insights?level=ad&date_preset=last_7d&fields=campaign_name,impressions,spend&access_token=EAAe6LE33eD0BRO5yvZC1uVw30Fmoijhoyah51lZAMQy6XpmrEnyYCigdWM3ivROOCGOqxoHS0ZAKjsuqql9MUiYpzzxPRwQTpF1AAwse9ZA2ZB0igF5hNBEXotC9PPhxoMfKuD9MWWgVPHcy1RpPgATX48axxJtRlM4QPfDdgLcDa6AmXmYpLxZAEClhJqSXfJo70ZAm2mBxpstoGr02XMfEXcW2vBlITlqXKRGIBAfNlR1eaLDimIP4O5kZBrtsyJRq1e7rsOMct7pwonggcuktqPDlpZBVWJecqOdJ17KNOgJtdP7biJFfMvZA36s4r0h2tz0w2Uz7RYLpPCmD7u
