@@ -2,7 +2,8 @@ with calendar as (
 
     select date_day
     from {{ ref('stg_calendar') }}
-    where date_day <= current_date
+    where date_day >= '2026-03-01'
+        and date_day <= current_date
 
 ),
 
@@ -35,23 +36,24 @@ final as (
         cal.date_day,
 
         -- customers
-        coalesce(c.new_customers, 0)            as new_customers,
-        coalesce(c.repeat_customers, 0)         as repeat_customers,
-        coalesce(c.total_customers, 0)          as total_customers,
-        coalesce(c.total_active_clients, 0)     as total_active_clients,
-        coalesce(c.active_groups, 0)            as active_groups,
+        coalesce(c.new_customers, 0)                as new_customers,
+        coalesce(c.repeat_customers, 0)             as repeat_customers,
+        coalesce(c.total_customers, 0)              as total_customers,
+        coalesce(c.total_active_clients, 0)         as total_active_clients,
+        coalesce(c.active_clients_groups, 0)        as active_clients_groups,
+        coalesce(c.active_clients_subscriptions, 0) as active_clients_subscriptions,
+        coalesce(c.active_groups, 0)                as active_groups,
 
         -- finance
-        coalesce(f.revenue, 0)                  as revenue,
-        coalesce(f.expenses, 0)                 as expenses,
+        coalesce(f.revenue, 0)                      as revenue,
+        coalesce(f.expenses, 0)                     as expenses,
         coalesce(f.revenue, 0)
-            - coalesce(f.expenses, 0)           as profit,
+            - coalesce(f.expenses, 0)               as profit,
 
         -- instagram
         ig.instagram_followers,
         ig.instagram_media_count,
-        ig.instagram_messages,
-        ig.instagram_new_conversations
+        ig.new_instagram_followers
 
     from calendar cal
     left join customers c   on c.date_day = cal.date_day
