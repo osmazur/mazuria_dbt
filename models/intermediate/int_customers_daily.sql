@@ -51,7 +51,6 @@ active_daily as (
     inner join groups g
         on g.purchase_date <= cal.date_day
         and (g.ended_at is null or g.ended_at >= cal.date_day)
-        and g.is_active = 'Yes'
     group by cal.date_day
 
 ),
