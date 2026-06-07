@@ -1,6 +1,15 @@
 with calendar as (
 
-    select date_day
+    select
+        date_day,
+        month_of_year                   as month_number,
+        month_name,
+        month_start_date,
+        month_end_date,
+        week_start_date,
+        week_of_year                    as week_number,
+        quarter_of_year                 as quarter,
+        year_number                     as year
     from {{ ref('stg_calendar') }}
     where date_day >= '2026-03-01'
         and date_day <= current_date
@@ -34,6 +43,14 @@ final as (
 
     select
         cal.date_day,
+        cal.month_number,
+        cal.month_name,
+        cal.month_start_date,
+        cal.month_end_date,
+        cal.week_start_date,
+        cal.week_number,
+        cal.quarter,
+        cal.year,
 
         -- customers
         coalesce(c.new_customers, 0)                as new_customers,
