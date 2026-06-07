@@ -60,6 +60,18 @@ payments as (
 
 ),
 
+min_attendance_dates as (
+
+    select
+        ar._dlt_parent_id,
+        min(a.properties__day__date__start::date) as first_attendance_date
+    from {{ source('notion', 'group__properties__attendance__relation') }} ar
+    inner join {{ source('notion', 'attendance') }} a
+        on a.id = ar.id
+    group by ar._dlt_parent_id
+
+),
+
 final as (
 
     select
@@ -82,7 +94,8 @@ final as (
         dg.dict_group_id,
         t.teacher_id,
         n.note,
-        p.payment_info
+        p.payment_info,
+        mad.first_attendance_date
 
     from groups g
     left join students s on s._dlt_parent_id = g._dlt_id
@@ -91,6 +104,7 @@ final as (
     left join teachers t on t._dlt_parent_id = g._dlt_id
     left join notes n on n._dlt_parent_id = g._dlt_id
     left join payments p on p._dlt_parent_id = g._dlt_id
+    left join min_attendance_dates mad on mad._dlt_parent_id = g._dlt_id
 
 )
 

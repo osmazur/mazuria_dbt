@@ -26,7 +26,12 @@ final as (
         absent_count,
         attendance_percent,
         discount_percent,
+        row_number() over (
+            partition by student_id
+            order by coalesce(first_attendance_date, started_at::date, created_time::date)
+        )                           as purchase_seq,
         -- dates
+        first_attendance_date,
         started_at::date            as started_at,
         ended_at::date              as ended_at,
         -- timestamps
