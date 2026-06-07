@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: instagram
+    database: mazuria
+    schema: mazuria_raw
+
+    tables:
+      - name: instagram_followers_snapshot
+      - name: instagram_media_insights
+      - name: instagram_messages_snapshot

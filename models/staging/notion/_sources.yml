@@ -39,3 +39,4 @@ sources:
       - name: group__properties__teacher__relation
       - name: group__properties__note__title
       - name: group__properties__payment__rich_text
+      - name: group__properties__attendance__relation
