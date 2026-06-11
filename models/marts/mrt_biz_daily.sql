@@ -54,6 +54,8 @@ final as (
 
         -- customers
         coalesce(c.new_customers, 0)                as new_customers,
+        coalesce(c.new_customers_groups, 0)         as new_customers_groups,
+        coalesce(c.new_customers_subscriptions, 0)  as new_customers_subscriptions,
         coalesce(c.repeat_customers, 0)             as repeat_customers,
         coalesce(c.total_customers, 0)              as total_customers,
         coalesce(c.total_active_clients, 0)         as total_active_clients,

@@ -23,6 +23,8 @@ daily_new_repeat as (
     select
         purchase_date                                                           as date_day,
         count(distinct case when purchase_seq = 1 then student_id end)          as new_customers,
+        count(distinct case when purchase_seq = 1 and purchase_type = 'group' then student_id end)          as new_customers_groups,
+        count(distinct case when purchase_seq = 1 and purchase_type = 'subscription' then student_id end)   as new_customers_subscriptions,
         count(distinct case when purchase_seq > 1 then student_id end)          as repeat_customers
     from groups
     where purchase_date is not null
@@ -60,6 +62,8 @@ final as (
     select
         coalesce(nr.date_day, a.date_day)       as date_day,
         coalesce(nr.new_customers, 0)           as new_customers,
+        coalesce(nr.new_customers_groups, 0)    as new_customers_groups,
+        coalesce(nr.new_customers_subscriptions, 0) as new_customers_subscriptions,
         coalesce(nr.repeat_customers, 0)        as repeat_customers,
         coalesce(nr.new_customers, 0)
             + coalesce(nr.repeat_customers, 0)  as total_customers,
