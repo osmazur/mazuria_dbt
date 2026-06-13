@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: google
+    database: mazuria
+    schema: mazuria_raw
+
+    tables:
+      - name: google_reviews_snapshot

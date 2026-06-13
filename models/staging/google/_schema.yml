@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_google__reviews
+    description: >
+      One row per day with the studio's Google Business Profile rating and total
+      review count (deduplicated to the latest snapshot per day).
+    columns:
+      - name: snapshot_date
+        tests:
+          - unique
+          - not_null
+      - name: user_ratings_total
+        tests:
+          - not_null

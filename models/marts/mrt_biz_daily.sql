@@ -39,6 +39,12 @@ instagram as (
 
 ),
 
+google_reviews as (
+
+    select * from {{ ref('int_google_reviews_daily') }}
+
+),
+
 final as (
 
     select
@@ -72,12 +78,18 @@ final as (
         -- instagram
         ig.instagram_followers,
         ig.instagram_media_count,
-        ig.new_instagram_followers
+        ig.new_instagram_followers,
+
+        -- google reviews
+        gr.google_reviews_total,
+        gr.new_google_reviews,
+        gr.google_rating
 
     from calendar cal
-    left join customers c   on c.date_day = cal.date_day
-    left join finance f     on f.date_day = cal.date_day
-    left join instagram ig  on ig.date_day = cal.date_day
+    left join customers c       on c.date_day = cal.date_day
+    left join finance f         on f.date_day = cal.date_day
+    left join instagram ig      on ig.date_day = cal.date_day
+    left join google_reviews gr on gr.date_day = cal.date_day
 
 )
 
