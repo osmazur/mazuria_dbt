@@ -13,3 +13,16 @@ models:
       - name: user_ratings_total
         tests:
           - not_null
+
+  - name: stg_google__reviews_latest
+    description: >
+      One row per Google review ever captured in the daily top-5 from Place
+      Details (date + star rating, no text), deduplicated to its latest capture.
+    columns:
+      - name: review_id
+        tests:
+          - unique
+          - not_null
+      - name: published_date
+        tests:
+          - not_null
