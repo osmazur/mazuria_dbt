@@ -7,4 +7,3 @@ sources:
 
     tables:
       - name: google_reviews_snapshot
-      - name: google_reviews_latest

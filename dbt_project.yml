@@ -49,14 +49,7 @@ models:
       +materialized: table
       enabled: true
 
-seeds:
-  mazuria_dbt:
-    google_reviews_manual:
-      # Historical Google reviews entered by hand (the ~37 the Places API can't
-      # return). Fill seeds/google_reviews_manual.csv: review_id (any unique
-      # label, e.g. m001), published_date (YYYY-MM-DD), rating (1-5), author.
-      +column_types:
-        review_id: varchar
-        published_date: date
-        rating: integer
-        author: varchar
+# seeds:
+#   mazuria_dbt:
+#     +enabled: false
+#     +schema: raw_data
