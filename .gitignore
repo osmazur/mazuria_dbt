@@ -1,2 +1,8 @@
 package-lock.yml
 models/.DS_Store
+.env
+env/
+logs/
+target
+dbt_packages/
+profile/.user.yml

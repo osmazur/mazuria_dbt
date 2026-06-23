@@ -21,10 +21,10 @@ if [ "$branch" = "main" ]; then
 fi
 
 # Bootstrap the environment on first run (creates env/, installs dbt, deps).
-if [ ! -x "env/bin/dbt" ]; then
-    echo "venv missing — bootstrapping via setup_local_dbt.sh..."
+# if [ ! -x "env/bin/dbt" ]; then
+#     echo "venv missing — bootstrapping via setup_local_dbt.sh..."
     ./setup_local_dbt.sh
-fi
+# fi
 
 source env/bin/activate
 
