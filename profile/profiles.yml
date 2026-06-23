@@ -1,0 +1,34 @@
+# dbt profile for the Mazuria PostgreSQL project (dbt-core).
+# Same credentials for both targets — only the schema differs, driven by the
+# generate_schema_name macro which keys off target.name:
+#   prod -> dbt_prod_<stg|int|mrt>   (what the Telegram report reads)
+#   dev  -> falls through to target.schema (dbt_dev_oleksandr), a single
+#           sandbox schema, so local builds never touch the prod marts.
+#
+# Credentials come from env vars in ../.env (PG_HOST, PG_USER, ...), loaded by
+# run_dbt.sh / setup_local_dbt.sh / run_dbt_mcp.sh — nothing secret lives here.
+#
+# Default target is dev for safety; run_dbt.sh builds with --target prod.
+
+mazuria_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('PG_HOST') }}"
+      port: "{{ env_var('PG_PORT') | int }}"
+      user: "{{ env_var('PG_USER') }}"
+      password: "{{ env_var('PG_PASSWORD') }}"
+      dbname: "{{ env_var('PG_DATABASE') }}"
+      schema: dbt_dev_oleksandr
+      threads: 4
+
+    prod:
+      type: postgres
+      host: "{{ env_var('PG_HOST') }}"
+      port: "{{ env_var('PG_PORT') | int }}"
+      user: "{{ env_var('PG_USER') }}"
+      password: "{{ env_var('PG_PASSWORD') }}"
+      dbname: "{{ env_var('PG_DATABASE') }}"
+      schema: public
+      threads: 4
