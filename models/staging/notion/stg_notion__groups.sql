@@ -3,6 +3,10 @@ with base as (
     select * from {{ ref('base_notion__groups') }}
     where not coalesce(archived, false)
         and not coalesce(in_trash, false)
+        -- enrollments must have a course; course-less rows are incomplete
+        -- records that would otherwise inflate new/active counts and break
+        -- reconciliation with the per-course breakdown.
+        and course_id is not null
 
 ),
 
