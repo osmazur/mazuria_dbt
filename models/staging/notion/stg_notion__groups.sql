@@ -28,7 +28,7 @@ final as (
         discount_percent,
         row_number() over (
             partition by student_id
-            order by coalesce(first_attendance_date, started_at::date, created_time::date)
+            order by first_attendance_date nulls last, created_time
         )                           as purchase_seq,
         -- dates
         first_attendance_date,
