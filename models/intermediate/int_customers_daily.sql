@@ -6,7 +6,7 @@ with groups as (
         g.purchase_seq,
         g.is_active,
         g.dict_group_id,
-        coalesce(g.first_attendance_date, g.started_at, g.created_at::date) as purchase_date,
+        g.first_attendance_date as purchase_date,
         g.ended_at,
         case
             when c.course_name ilike 'абонемент%' then 'subscription'

@@ -21,7 +21,7 @@ groups as (
         g.student_id,
         g.purchase_seq,
         g.course_id,
-        coalesce(g.first_attendance_date, g.started_at, g.created_at::date) as purchase_date,
+        g.first_attendance_date as purchase_date,
         g.ended_at
     from {{ ref('stg_notion__groups') }} g
 
