@@ -15,6 +15,7 @@ final as (
         is_income,
         'payment_received' as tr_sub_type,
         operation_num,
+        source,
         total_sum
     from stg_gs_transactions_kasa
 )
