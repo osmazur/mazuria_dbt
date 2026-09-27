@@ -49,6 +49,16 @@ models:
       +materialized: table
       enabled: true
 
+# Only this seed is configured: generate_schema_name has no "is none" branch, so
+# a seed without an explicit +schema would land in dbt_prod_None. The sf_* seeds
+# are left untouched (workspaces sandbox).
+seeds:
+  mazuria_dbt:
+    finance_excluded_transactions:
+      +schema: stg
+      +column_types:
+        transaction_id: varchar
+
 # seeds:
 #   mazuria_dbt:
 #     +enabled: false

@@ -2,15 +2,33 @@ version: 2
 
 models:
   - name: stg_pb_transactions
+    description: >
+      PrivatBank transactions. Duplicates and blocklisted ids are no longer
+      filtered out — they are tagged with exclusion_reason and dropped later in
+      mrt_biz_daily. The tests below therefore assert only over the rows that
+      actually reach the business numbers; a previously-excluded row with a bad
+      date must not be able to fail the build and skip every downstream model.
     columns:
       - name: transaction_id
         tests:
-          - unique
-          - not_null
+          - unique:
+              config:
+                where: "exclusion_reason is null"
+          - not_null:
+              config:
+                where: "exclusion_reason is null"
       - name: transaction_date
         tests:
-          - not_null
-          
+          - not_null:
+              config:
+                where: "exclusion_reason is null"
+      - name: exclusion_reason
+        description: >
+          Why the row is left out of the report; null means it counts.
+          'duplicate', or whatever `reason` the finance_excluded_transactions
+          seed gives the id — the vocabulary is open on purpose, so documenting
+          a real reason in the seed can never fail the build.
+
   - name: stg_gs_transactions_kasa
     columns:
       - name: transaction_date

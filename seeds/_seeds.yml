@@ -1,0 +1,22 @@
+version: 2
+
+seeds:
+  - name: finance_excluded_transactions
+    description: >
+      Transaction ids deliberately kept out of the business numbers. Previously
+      these were two hardcoded `not in (...)` lists in stg_pb_transactions and
+      int_finance_card; here each id can carry a written reason instead.
+
+      To exclude a transaction, add a row. To stop excluding it, delete the row.
+      `reason` is shown verbatim on the dashboard's Транзакції tab.
+    columns:
+      - name: transaction_id
+        tests:
+          - unique
+          - not_null
+      - name: reason
+        description: Short slug shown as the exclusion reason, e.g. manual_exclusion.
+        tests:
+          - not_null
+      - name: note
+        description: Free-text explanation for humans. Not used by any model.

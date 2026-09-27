@@ -44,9 +44,19 @@ money as (
         transaction_type_code,
         doc_number,
         ultmt,
-        aut_cntr_mfo_name
+        aut_cntr_mfo_name,
+        -- Tag instead of filter (see stg_pb_transactions). The staging tag wins;
+        -- the rest reproduce the old WHERE clause exactly, including the fact
+        -- that `comment not like` also dropped every null-comment row.
+        coalesce(
+            exclusion_reason,
+            case
+                when comment is null then 'null_comment'
+                when comment like '%Переказ власних%' then 'own_transfer'
+                when transaction_date is null then 'no_date'
+            end
+        ) as exclusion_reason
     from prep
-    where comment not like ('%Переказ власних%') and transaction_id not in ('3344512823')
 
 )
 select * from money

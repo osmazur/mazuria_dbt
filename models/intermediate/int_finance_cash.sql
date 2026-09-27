@@ -16,7 +16,14 @@ final as (
         'payment_received' as tr_sub_type,
         operation_num,
         source,
-        total_sum
+        total_sum,
+        -- Mirrors mrt_biz_daily: a null is_income fell through both
+        -- `case when is_income` and `case when not is_income`, so the row
+        -- silently counted as neither income nor expense.
+        case
+            when transaction_date is null then 'no_date'
+            when is_income is null then 'unknown_direction'
+        end as exclusion_reason
     from stg_gs_transactions_kasa
 )
 

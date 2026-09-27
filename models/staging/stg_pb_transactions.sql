@@ -50,15 +50,38 @@ final as (
 
 ),
 
-deduplicated_cte as (
+-- Rows are no longer dropped here. Duplicates and blocklisted ids are kept and
+-- tagged instead, so the finance models can report what was left out of the
+-- final numbers and why. fct_finance carries the tag; mrt_biz_daily filters on it.
+flagged as (
 
-  {{ dbt_utils.deduplicate(
-      relation='final',
-      partition_by='transaction_id',
-      order_by='transaction_timestamp desc',
-     )
-  }}
+    select
+        *,
+        row_number() over (
+            partition by transaction_id
+            order by transaction_timestamp desc
+        ) > 1 as is_duplicate
+    from final
+
+),
+
+excluded as (
+
+    select
+        transaction_id,
+        reason
+    from {{ ref('finance_excluded_transactions') }}
 
 )
-select * from deduplicated_cte
-where transaction_id not in ('HS41Q0421K11OZP21042026125000', '4623156143', '4591939239', '4782225276', '4636638387', '4636630375', '4636636361', 'JBKLQ46ODKLZ9UP06042026112600', '4550364873', 'JBKLQ46ODKLZM0P06042026112600')
+
+select
+    f.*,
+    case
+        -- `transaction_id not in (...)` evaluated to NULL for a null id, so these
+        -- rows were dropped here too — silently. Tagged now, still not counted.
+        when f.transaction_id is null then 'no_transaction_id'
+        when f.is_duplicate then 'duplicate'
+        when x.transaction_id is not null then coalesce(x.reason, 'manual_exclusion')
+    end as exclusion_reason
+from flagged as f
+left join excluded as x on x.transaction_id = f.transaction_id

@@ -23,6 +23,9 @@ finance as (
         sum(case when is_income then total_sum else 0 end)      as revenue,
         sum(case when not is_income then total_sum else 0 end)  as expenses
     from {{ ref('fct_finance') }}
+    -- fct_finance keeps excluded rows so they can be reported on; this is the
+    -- one place they are dropped back out of the business numbers.
+    where exclusion_reason is null
     group by transaction_date
 
 ),

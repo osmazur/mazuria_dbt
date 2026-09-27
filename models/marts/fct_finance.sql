@@ -22,6 +22,9 @@ int_finance_man as (
 
 ),
 
+-- Every transaction, including the ones that do not reach the report.
+-- `exclusion_reason is null` means the row counts; anything else is why it was
+-- left out. NEVER sum this model without that filter — mrt_biz_daily applies it.
 card as (
 
     select
@@ -31,9 +34,9 @@ card as (
         is_income,
         tr_sub_type,
         comment,
-        total_sum
+        total_sum,
+        exclusion_reason
     from int_finance_card
-    where transaction_date is not null
 ),
 
 cash as (
@@ -48,9 +51,9 @@ cash as (
         is_income,
         tr_sub_type,
         source                                      as comment,
-        total_sum
+        total_sum,
+        exclusion_reason
     from int_finance_cash
-    where transaction_date is not null
 ),
 
 off as (
@@ -63,9 +66,10 @@ off as (
         false as is_income,
         'salary' as tr_sub_type,
         'Зарплата викладачів' as comment,
-        sum(stopay) as total_sum
+        sum(stopay) as total_sum,
+        cast(null as varchar) as exclusion_reason
     from int_finance_man
-    group by 1,2,3,4,5,6
+    group by 1,2,3,4,5,6,8
 )
 
 select * from card
