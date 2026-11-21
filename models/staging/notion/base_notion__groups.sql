@@ -72,6 +72,19 @@ min_attendance_dates as (
 
 ),
 
+last_present_dates as (
+
+    select
+        ar._dlt_parent_id,
+        max(a.properties__day__date__start::date) as last_attendance_date
+    from {{ source('notion', 'group__properties__attendance__relation') }} ar
+    inner join {{ source('notion', 'attendance') }} a
+        on a.id = ar.id
+    where a.properties__is_present__formula__number = 1
+    group by ar._dlt_parent_id
+
+),
+
 final as (
 
     select
@@ -89,13 +102,16 @@ final as (
         g.properties__is_active__formula__string            as is_active,
         g.properties__phone__formula__string                as phone,
         g.properties__discount_pr__number                   as discount_percent,
+        -- Notion formula "доплатити"; dlt normalizes the Cyrillic name to "x"
+        g.properties__x__formula__string                    as payment_status_raw,
         s.student_id,
         c.course_id,
         dg.dict_group_id,
         t.teacher_id,
         n.note,
         p.payment_info,
-        mad.first_attendance_date
+        mad.first_attendance_date,
+        lpd.last_attendance_date
 
     from groups g
     left join students s on s._dlt_parent_id = g._dlt_id
@@ -105,6 +121,7 @@ final as (
     left join notes n on n._dlt_parent_id = g._dlt_id
     left join payments p on p._dlt_parent_id = g._dlt_id
     left join min_attendance_dates mad on mad._dlt_parent_id = g._dlt_id
+    left join last_present_dates lpd on lpd._dlt_parent_id = g._dlt_id
 
 )
 

@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: fct_enrollments
+    description: >
+      One row per enrollment (Notion "Group" row: student x group) with names,
+      attendance and payment status parsed from the Notion "доплатити" formula.
+    columns:
+      - name: enrollment_id
+        tests:
+          - unique
+          - not_null
+      - name: payment_status
+        tests:
+          - accepted_values:
+              values: ['awaiting_start', 'payment_missing', 'paid_full', 'payment_due', 'payment_soon', 'paid_first']
+
+  - name: mrt_customers_360
+    description: >
+      One row per student: lifetime activity across enrollments, last seen date,
+      current group/teacher and customer_status (consumed by the weekly
+      clients report in mazuria_etl).
+    columns:
+      - name: student_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_status
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['former', 'awaiting_start', 'active', 'inactive_30d', 'inactive_60d', 'inactive_90d_plus']
