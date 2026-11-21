@@ -29,6 +29,16 @@ models:
           - unique
           - not_null
 
+  - name: stg_notion__groups
+    columns:
+      - name: group_id
+        tests:
+          # warn only: duplicates mean a Group row links several
+          # students/teachers/courses in Notion (fct_enrollments dedups them)
+          - unique:
+              config:
+                severity: warn
+
   - name: stg_notion__attendances
     columns:
       - name: attendance_id

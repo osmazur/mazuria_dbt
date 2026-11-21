@@ -5,7 +5,13 @@
 
 with enrollments as (
 
-    select * from {{ ref('stg_notion__groups') }}
+    -- A Notion Group row can link several students/teachers/courses/groups and
+    -- base_notion__groups fans those out into several rows. Keep one row per
+    -- enrollment; such rows are flagged by the warn-level unique test on
+    -- stg_notion__groups.group_id so they can be fixed in Notion.
+    select distinct on (group_id) *
+    from {{ ref('stg_notion__groups') }}
+    order by group_id, student_id, teacher_id, course_id, dict_group_id
 
 ),
 
